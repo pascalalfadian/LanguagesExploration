@@ -17,6 +17,7 @@ Setiap kelompok akan diberikan bahasa yang harus dipelajari, salah satu dari:
 * Ruby (https://www.ruby-lang.org)
 * Dart (https://www.dartlang.org)
 * Scala (http://www.scala-lang.org/)
+* C# (https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx)
 
 Tugas kelompok Anda diminta untuk menerjemahkan sebuah [kode program dalam bahasa Java](https://github.com/pascalalfadian/LanguagesExploration/blob/master/LanguagesExploration.java) ke dalam bahasa pemrograman berbasis objek yang ditetapkan.
 
@@ -30,6 +31,7 @@ Kelompok Anda diminta untuk:
 3. Ketua kelompok menambahkan akun setiap anggotanya sebagai kontributor (Settings > Collaborators)
 4. Ketua & setiap anggota bekerja sama menerjemahkan `LanguagesExploration.java` ke bahasa yang telah ditetapkan terhadap kelompok tersebut:
     * Nama file yang dibuat sesuai nama file asal, dengan ekstensi sesuai bahasa tujuan (misal: `LanguagesExploration.php`).
+    * Taruh di direktori sesuai kelas Anda (misal: `A/LanguagesExploration.php` atau `B/LanguagesExploration.php`).
     * Setiap poin pada kode sumber asal, harus ada pasangannya di bahasa tujuan.
 5. Setelah selesai, ketua mengumpulkan dengan cara melakukan pull request ke repositori utama (Pull requests > New pull request). Pastikan base nya adalah `pascalalfadian/LanguagesExploration` dan head fork adalah repositori milik ketua kelompok.
 
