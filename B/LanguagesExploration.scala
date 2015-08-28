@@ -42,6 +42,7 @@ class PublicSubClass extends PublicClass{
 	override def getPrivateInt(): Int = {
 		
 		//10. Cara mengakses method dari kelas Superclass
+		
 		return (2 * super.getPrivateInt())
 	}
 }
