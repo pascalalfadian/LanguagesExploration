@@ -1,36 +1,36 @@
-
 object PublicClass{
 
-//1. Cara mendefinisikan atribut statik
+	//1. Cara mendefinisikan atribut statik
 	var staticInt: Int = 0
 
-//2. Cara mendefinisikan konstanta
+	//2. Cara mendefinisikan konstanta
 	val PI: Double = 3.14
 }
 
 //3.Cara mendefiniskan kelas
 class PublicClass{
 
-//4. Cara mendefiniskan atribut ber hak akses private, bertipe integer, dan mengisi nilai awal
+	//4. Cara mendefiniskan atribut ber hak akses private, bertipe integer, dan mengisi nilai awal
 	private var privateInt: Int = 0
 	
-//5. Cara mendefiniskan atribut ber hak akses public, bertipe String, dan mengisi nilai awal 	
+	//5. Cara mendefiniskan atribut ber hak akses public, bertipe string, dan mengisi nilai awal 	
 	var publicString: String = "Hello"
 
-/**
-* Mengubah atribut privateInt dengan nilai yang baru, bertipe integer
-* @param privateInt merupakan nilai dari atribut privateInt yang baru
-*/
+	/**
+	* Mengubah atribut privateInt dengan nilai yang baru, bertipe integer
+	* @param newPrivateInt merupakan nilai dari atribut privateInt yang baru
+	*/
 	def setPrivateInt(newPrivateInt: Int): Unit = {
-		privateInt = newPrivateInt //6. Cara mengubah nilai dari atribut menjadi nilai dari parameter
+		//6. Cara mengubah nilai dari atribut menjadi nilai dari parameter
+		privateInt = newPrivateInt 
 	}
 
-/**
- * Mengembalikan nilai dari atribut privateInt
- * @return nilai dari atribut privateInt
- */
+	/**
+	 * Mengembalikan nilai dari atribut privateInt
+	 * @return nilai dari atribut privateInt
+	 */
 	def getPrivateInt(): Int = {
-	   //7. Cara mengembalikan nilai
+	   	//7. Cara mengembalikan nilai
 		return privateInt
 	}
 }
@@ -38,17 +38,15 @@ class PublicClass{
 //8. Cara menurunkan kelas
 class PublicSubClass extends PublicClass{
 
-//9. Cara meng-override method dari kelas Superclass
+	//9. Cara meng-override method dari kelas Superclass
 	override def getPrivateInt(): Int = {
-		
 		//10. Cara mengakses method dari kelas Superclass
-		
 		return (2 * super.getPrivateInt())
 	}
 }
 
 object LanguagesExploration {
-
+	
 	import PublicClass._
 
 	def main(args: Array[String]) {
@@ -70,6 +68,7 @@ object LanguagesExploration {
 		
 		//16. Cara mengisi nilai atribut statik
 		staticInt = 10
+		
 		//17. Cara memanggil atribut statik dan mendapatkan nilainya 
 		println("[10] PublicClass.staticInt = " + PublicClass.staticInt)
 		
