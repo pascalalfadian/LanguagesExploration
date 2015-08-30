@@ -1,6 +1,8 @@
 /**
  * Converting to C#...
  */
+using System;
+namespace PublicClassApplication{
 // 1. Cara mendifinisikan kelas
 class PublicClass {
     
@@ -58,7 +60,7 @@ class PublicSubClass extends PublicClass {
 }
 
 public class LanguagesExploration {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // 14. Cara menginstansiasi kelas baru
         PublicClass publicClass = new PublicClass();
         
@@ -91,4 +93,5 @@ public class LanguagesExploration {
         // 23. Memastikan method overriding bekerja
         System.out.println("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt());
     }
+}
 }
