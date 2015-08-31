@@ -33,3 +33,19 @@ class PublicClass {
     return this.privateInt
   } 
 }
+
+object LanguagesExploration {
+	def main(args: Array[String]) {
+		// 17. Cara mengubah isi atribut publik dari luar kelas
+        publicClass.publicString = "World!"
+        
+        // 18. Cara mendapatkan isi atribut publik dari luar kelas
+        println("[World!] publicClass.publicString = " + publicClass.publicString)
+        
+        // 19. Cara mengisi nilai atribut statik
+        PublicClass.staticInt = 10
+        
+        // 20. Cara mendapatkan nilai atribut statik
+        println("[10] PublicClass.staticInt = " + PublicClass.staticInt)
+	}
+}
