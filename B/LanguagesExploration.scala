@@ -16,7 +16,7 @@ class PublicClass{
 	//5. Cara mendefiniskan atribut ber hak akses public, bertipe string, dan mengisi nilai awal 	
 	var publicString: String = "Hello"
 	
-	// 6. Cara mendefinisikan konstruktor
+	// Cara mendefinisikan konstruktor
   	def PublicClass(){
     	// kosong
   	}
