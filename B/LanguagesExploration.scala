@@ -54,7 +54,7 @@ object LanguagesExploration {
 	
 	import PublicClass._
 
-	def main(args: Array[String]) {
+	def main(args: Array[String]): Unit = {
 
 		//11. Cara menginstansiasi kelas baru
 		val publicClass = new PublicClass
