@@ -34,9 +34,16 @@ class PublicClass {
   } 
 }
 
+/**
+ * The main class. Must be defined. Names don't matter as long
+ * as it is defined under "object." (Remember that object denotes
+ * static functions and variables).
+ */
 object LanguagesExploration {
+	/**
+	* The main function. It must accept a parameter of an Array of Strings.
+	*/
 	def main(args: Array[String]) {
-	
 		//14. cara menginstansiasi kelas baru.
 		publicClass : PublicClass = new PublicClass()
 		
@@ -47,15 +54,21 @@ object LanguagesExploration {
 		println("[13] publicClass.getPrivateint() = " + publicClass.getPrivateint())
 		
 		// 17. Cara mengubah isi atribut publik dari luar kelas
-        publicClass.publicString = "World!"
-        
-        // 18. Cara mendapatkan isi atribut publik dari luar kelas
-        println("[World!] publicClass.publicString = " + publicClass.publicString)
-        
-        // 19. Cara mengisi nilai atribut statik
-        PublicClass.staticInt = 10
-        
-        // 20. Cara mendapatkan nilai atribut statik
-        println("[10] PublicClass.staticInt = " + PublicClass.staticInt)
+		publicClass.publicString = "World!"
+		
+		// 18. Cara mendapatkan isi atribut publik dari luar kelas
+		println("[World!] publicClass.publicString = " + publicClass.publicString)
+		
+		// 19. Cara mengisi nilai atribut statik
+		PublicClass.staticInt = 10
+		
+		// 20. Cara mendapatkan nilai atribut statik
+		println("[10] PublicClass.staticInt = " + PublicClass.staticInt)
+		
+		var publicSubClass = new PublicSubClass
+		
+		publicSubClass.setPrivateInt_=(13)
+		
+		println("[26] publicSubClass.getPrivateInt() = " + publicClass.getPrivateInt())
 	}
 }
