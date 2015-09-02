@@ -16,17 +16,14 @@ class PublicClass{
 	//5. Cara mendefiniskan atribut ber hak akses public, bertipe string, dan mengisi nilai awal 	
 	var publicString: String = "Hello"
 	
-	// Cara mendefinisikan konstruktor
-  	def PublicClass(){
-    	// kosong
-  	}
-
+	//6a. Cara mendifinisikan method dengan parameter tanpa return value
+	//6b. cara menuliskan dokumentasi untuk method 6a
 	/**
 	* Mengubah atribut privateInt dengan nilai yang baru, bertipe integer
 	* @param newPrivateInt merupakan nilai dari atribut privateInt yang baru
 	*/
 	def setPrivateInt(newPrivateInt: Int): Unit = {
-		//6. Cara mengubah nilai dari atribut menjadi nilai dari parameter
+		//7. Cara mengubah nilai dari atribut menjadi nilai dari parameter
 		privateInt = newPrivateInt 
 	}
 
