@@ -34,6 +34,17 @@ class PublicClass {
   } 
 }
 
+// 11. Cara menurunkan kelas
+class PublicSubClass extends PublicClass {
+    
+    // 12. Cara melakukan override method
+    def getPrivateInt() : Int = {
+    
+    // 13. Cara mengakses method pada superclass
+    return 2 * super.getPrivateInt();
+    }
+}
+
 /**
  * The main class. Must be defined. Names don't matter as long
  * as it is defined under "object." (Remember that object denotes
