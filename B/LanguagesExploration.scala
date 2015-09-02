@@ -26,25 +26,32 @@ class PublicClass{
 		//7. Cara mengubah nilai dari atribut menjadi nilai dari parameter
 		privateInt = newPrivateInt 
 	}
-
+	
+	//8a. Cara mendifinisikan method tanpa return value
+	//8b. cara menuliskan dokumentasi untuk method 8a 
 	/**
 	 * Mengembalikan nilai dari atribut privateInt
 	 * @return nilai dari atribut privateInt
 	 */
 	def getPrivateInt(): Int = {
-	   	//7. Cara mengembalikan nilai
+	   	//9. Cara mengembalikan nilai
 		return privateInt
 	}
 }
 
-//8. Cara menurunkan kelas
+//10. Cara menurunkan kelas
 class PublicSubClass extends PublicClass{
 
-	//9. Cara meng-override method dari kelas Superclass
+	//11. Cara meng-override method dari kelas Superclass
 	override def getPrivateInt(): Int = {
-		//10. Cara mengakses method dari kelas Superclass
+		//12. Cara mengakses method dari kelas Superclass
 		return (2 * super.getPrivateInt())
 	}
+}
+
+//13. Cara mendefinisikan konstruktor
+class PublicClass2(// kosong){
+	
 }
 
 object LanguagesExploration {
@@ -53,35 +60,35 @@ object LanguagesExploration {
 
 	def main(args: Array[String]): Unit = {
 
-		//11. Cara menginstansiasi kelas baru
+		//14. Cara menginstansiasi kelas baru
 		val publicClass = new PublicClass
 		
-		//12. Cara memanggil method dengan parameter  
+		//15. Cara memanggil method dengan parameter  
 		publicClass.setPrivateInt(13)
 		
-		//13. Cara memanggil method dan mendapatkan return value-nya
+		//16. Cara memanggil method dan mendapatkan return value-nya
 		println("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt())
 		
-		//14. Cara mengubah nilai dari atribut publicString dari kelas publicClass (luar kelas)
+		//17. Cara mengubah nilai dari atribut publicString dari kelas publicClass (luar kelas)
 		publicClass.publicString = "World!"
 		
-		//15. Cara memanggil atribut dan mendapatkan nilai atribut dari kelas publicClass (luar kelas)
+		//18. Cara memanggil atribut dan mendapatkan nilai atribut dari kelas publicClass (luar kelas)
 		println("[World!] publicClass.publicString = " + publicClass.publicString)
 		
-		//16. Cara mengisi nilai atribut statik
+		//19. Cara mengisi nilai atribut statik
 		staticInt = 10
 		
-		//17. Cara memanggil atribut statik dan mendapatkan nilainya 
+		//20. Cara memanggil atribut statik dan mendapatkan nilainya 
 		println("[10] PublicClass.staticInt = " + PublicClass.staticInt)
 		
-		//18. Cara memanggil konstanta 
+		//21. Cara memanggil konstanta 
 		println("[3.14] PublicClass.PI = " + PublicClass.PI)
 		
-		//19. Cara menginstansiasi kelas subclass
+		//22. Cara menginstansiasi kelas subclass
 		val publicSubClass = new PublicSubClass
 		publicSubClass.setPrivateInt(13)
 		
-		//20. Memastikan method overriding bekerja
+		//23. Memastikan method overriding bekerja
 		println("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt())
 	}
 }
