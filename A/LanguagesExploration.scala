@@ -56,13 +56,13 @@ object LanguagesExploration {
    */
   def main(args: Array[String]) {
     //14. cara menginstansiasi kelas baru.
-    publicClass : PublicClass = new PublicClass()
+    var publicClass : PublicClass = new PublicClass()
     
     //15. cara memanggil method dengan parameter.
     publicClass.setPrivateInt(13)
     
     //16. cara memanggil method dan mendapatkan return value-nya.
-    println("[13] publicClass.getPrivateint() = " + publicClass.getPrivateint())
+    println("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt())
     
     // 17. Cara mengubah isi atribut publik dari luar kelas
     publicClass.publicString = "World!"
