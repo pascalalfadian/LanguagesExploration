@@ -60,6 +60,19 @@
 			}
 		
 		?>
+		
+		//tambahin yang nomer 21 - beres
+		// 21. Cara mendapatkan nilai konstanta
+					echo "[3.14] PublicClass.PI = ". $PublicClass->PI;
+					
+					// 22. Cara menginstansiasi kelas dengan turunannya
+					$publicSubClass=new PublicSubClass();
+					
+					
+					$publicSubClass->set_private_int(13);
+					
+					 // 23. Memastikan method overriding bekerja
+					echo "[26] publicSubClass.getPrivateInt() = ". publicSubClass->get_private_int();
 	
 	</body>
 
