@@ -5,7 +5,7 @@ class PublicClass {
   private var privateInt : Int = _
 
   // 3. Cara mendefinisikan atribut public bertipe string, dan mengisi, dengan nilai awal
-  var publicString : String = _
+  var publicString : String = "Hello"
 
   // 6. Cara mendefinisikan konstruktor
   // 'Primary Contructor' telah dibuat saat pendefinisian kelas di baris ke-2
