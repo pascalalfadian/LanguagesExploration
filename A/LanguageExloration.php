@@ -58,6 +58,8 @@
 				}
 				
 			}
+			//14. Cara menginstansiasi kelas baru
+			$publicClass = new PublicClass();
 		
 		?>
 		
