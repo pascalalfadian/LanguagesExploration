@@ -8,6 +8,8 @@
 				 // 2. Cara mendefinisikan atribut privat bertipe int
 				private $private_int=0;
 				
+				//protected $private_int_2=0;
+				
 				// 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
 				public $public_string="Hello";
 				
@@ -15,7 +17,7 @@
 				public static $static_int;
 				
 				// 5. Cara mendefinisikan konstanta
-				//belum dibikin
+				const PI =3.14;
 				
 				 // 6. Cara mendefinisikan konstruktor
 				public function __construct(){
@@ -50,32 +52,69 @@
 					
 				}
 				// 12. Cara melakukan override method
-				public function get_private_int($input){
+				public function get_private_int(){
+					
 					// 13. Cara mengakses method pada superclass
-					$x=2*$this->private_int;
-					return $x;
+					return 2*parent::get_private_int();
+					
 					
 				}
 				
 			}
-			//14. Cara menginstansiasi kelas baru
-			$publicClass = new PublicClass();
-		
-		?>
-		
-		//tambahin yang nomer 21 - beres
-		// 21. Cara mendapatkan nilai konstanta
-					echo "[3.14] PublicClass.PI = ". $PublicClass->PI;
+			
+			class LanguagesExploration{
+				
+				public static function main(){
+					// 14. Cara menginstansiasi kelas baru
+					$publicClass = new PublicClass();
+					
+					// 15. Cara memanggil method dengan parameter
+					$publicClass->set_private_int(13);
+					
+					// 16. Cara memanggil method dan mendapatkan return value-nya
+					echo "[13] publicClass.getPrivateInt() = " . $publicClass->get_private_int()."<br>";
+					
+					// 17. Cara mengubah isi atribut publik dari luar kelas
+					$publicClass -> publicString = "World!";
+					
+					// 18. Cara mendapatkan isi atribut publik dari luar kelas
+					echo "[World!] publicClass.publicString = " . $publicClass->publicString."<br>";
+					
+					// 19. Cara mengisi nilai atribut statik
+					$publicClass->static_int = 10;
+					
+					// 20. Cara mendapatkan nilai atribut statik
+					echo "[10] PublicClass.staticInt = " . $publicClass->static_int."<br>";
+					
+					// 21. Cara mendapatkan nilai konstanta
+					echo "[3.14] PublicClass.PI = ". $publicClass::PI."<br>";
 					
 					// 22. Cara menginstansiasi kelas dengan turunannya
 					$publicSubClass=new PublicSubClass();
-					
-					
 					$publicSubClass->set_private_int(13);
-					
-					 // 23. Memastikan method overriding bekerja
-					echo "[26] publicSubClass.getPrivateInt() = ". publicSubClass->get_private_int();
+				
+					// 23. Memastikan method overriding bekerja
+					echo "[26] publicSubClass.getPrivateInt() = ". $publicSubClass->get_private_int()."<br>";
 	
+				
+				
+				}
+			}
+			
+			LanguagesExploration::main();
+			
+		
+		?>
+		
+		
+		
+					
+					
+					
+					
+					
+					
+					 
 	</body>
 
 
