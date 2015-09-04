@@ -38,11 +38,11 @@ class PublicClass {
 class PublicSubClass extends PublicClass {
     
     // 12. Cara melakukan override method
-    def getPrivateInt() : Int = {
+    def getPrivateInt() : Int = 
     
     // 13. Cara mengakses method pada superclass
-    return 2 * super.getPrivateInt();
-    }
+     2 * super.getPrivateInt
+    
 }
 
 /**
