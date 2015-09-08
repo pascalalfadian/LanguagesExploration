@@ -1,4 +1,3 @@
-__author__ = 'Carissa'
 
 # 1. Cara mendifinisikan kelas
 class PublicClass():
