@@ -19,7 +19,7 @@ class PublicClass {
     public static final double PI = 3.14;
     
     // 6. Cara mendefinisikan konstruktor
-    public PublicClass() {
+    public PublicClass(string[] args) {
         // kosong
     }
     
@@ -32,7 +32,7 @@ class PublicClass {
     public void setPrivateInt(int privateInt) {
     
         // 8. Cara mengisi atribut dari dalam kelas itu sendiri
-        this.privateInt = privateInt;
+        set { this.privateInt = privateInt;}
     }
     
     // 9a. Cara mendefinisikan method dengan return value
@@ -44,7 +44,7 @@ class PublicClass {
     public int getPrivateInt() {
         
         // 10. Cara mengembalikan nilai
-        return this.privateInt;
+        get  {return this.privateInt; }
     }
 }
 
