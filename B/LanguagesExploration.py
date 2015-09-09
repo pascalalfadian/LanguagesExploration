@@ -1,5 +1,6 @@
 class PublicClass:
     privateInt=0
+    publicString ="hello"
     def __init__ (self):
         self.publicString = "hello"
         self.staticInt = 0
@@ -29,5 +30,5 @@ class LanguageExploration:
     publicSubClass.setPrivateInt(13)
     print("[26] publicSubClass.getPrivateInt = %s"%publicSubClass.getPrivateInt())
 
-###
+####
 
