@@ -68,40 +68,42 @@ class PublicSubClass extends PublicClass {
     }
 }
 
+//Pada dart tidak dibutuhkan kelas main untuk menjalankan method main
 void main() {
-        // 14. Cara menginstansiasi kelas baru
-        PublicClass publicClass = new PublicClass();
         
-        // 15. Cara memanggil method dengan parameter
-        publicClass.setPrivateInt(13);
+    // 14. Cara menginstansiasi kelas baru
+    PublicClass publicClass = new PublicClass();
         
-        // 16. Cara memanggil method dan mendapatkan return value-nya
-        System.out.println("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt());
+    // 15. Cara memanggil method dengan parameter
+    publicClass.setPrivateInt(13);
         
-        // 17. Cara mengubah isi atribut publik dari luar kelas
-        publicClass.publicString = "World!";
+    // 16. Cara memanggil method dan mendapatkan return value-nya
+    print("[13] publicClass.getPrivateInt() =  ${publicClass.getPrivateInt()}");
         
-        // 18. Cara mendapatkan isi atribut publik dari luar kelas
-        System.out.println("[World!] publicClass.publicString = " + publicClass.publicString);
+    // 17. Cara mengubah isi atribut publik dari luar kelas
+    publicClass.publicString = "World!";
         
-        // 19. Cara mengisi nilai atribut statik
-        //Sama seperti java, atribut statik dipanggil dari kelasnya kemudian dapat diisi dengan suatu nilai literal.
-        PublicClass.staticInt = 10;
+    // 18. Cara mendapatkan isi atribut publik dari luar kelas
+    System.out.println("[World!] publicClass.publicString = " + publicClass.publicString);
         
-        // 20. Cara mendapatkan nilai atribut statik
-        //Sama seperti java, atribut statik didapat dengan cara memanggilnya dari kelasnya.
-        //Untuk mengoutputkan nilai integer ke layar dilakukan dengan ${value}, dengan value adalah nilai integer tersebut.
-        print("[10] PublicClass.staticInt = ${PublicClass.staticInt}");
+    // 19. Cara mengisi nilai atribut statik
+    //Sama seperti java, atribut statik dipanggil dari kelasnya kemudian dapat diisi dengan suatu nilai literal.
+    PublicClass.staticInt = 10;
         
-        // 21. Cara mendapatkan nilai konstanta
-        System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
+    // 20. Cara mendapatkan nilai atribut statik
+    //Sama seperti java, atribut statik didapat dengan cara memanggilnya dari kelasnya.
+    //Untuk mengoutputkan nilai integer ke layar dilakukan dengan ${value}, dengan value adalah nilai integer tersebut.
+    print("[10] PublicClass.staticInt = ${PublicClass.staticInt}");
         
-        // 22. Cara menginstansiasi kelas dengan turunannya
-        PublicClass publicSubClass = new PublicSubClass();
+    // 21. Cara mendapatkan nilai konstanta
+    System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
         
-        publicSubClass.setPrivateInt(13);
+    // 22. Cara menginstansiasi kelas dengan turunannya
+    PublicClass publicSubClass = new PublicSubClass();
         
-        // 23. Memastikan method overriding bekerja
-        System.out.println("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt());
-    }
+    publicSubClass.setPrivateInt(13);
+        
+    // 23. Memastikan method overriding bekerja
+    System.out.println("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt());
+    
 }
