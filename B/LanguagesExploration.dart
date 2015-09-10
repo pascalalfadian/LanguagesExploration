@@ -40,7 +40,8 @@ class PublicClass {
     public void setPrivateInt(int privateInt) {
     
         // 8. Cara mengisi atribut dari dalam kelas itu sendiri
-        this.privateInt = privateInt;
+        //Sama seperti java, untuk mengacu pada atribut kelas dapat menggunakan this.
+        this._privateInt = privateInt;
     }
     
     // 9a. Cara mendefinisikan method dengan return value
