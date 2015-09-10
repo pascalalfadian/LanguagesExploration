@@ -14,8 +14,21 @@ class PublicClass {
     public static final double PI = 3.14;
     
     // 6. Cara mendefinisikan konstruktor
-    public PublicClass() {
-        // kosong
+	/*
+		Named Constructor
+		Jika mendeklarasikan konstruktor lebih dari satu, disarankan meberi nama konstruktor agar dapat dibedakan dengan jelas.
+	*/
+	PublicClass.kosong(){
+		//kosong
+	}
+	/*
+		Constructor with optional parameter.
+		Parameter di dalam brace {} merupakan optional parameter. Parameter tersebut dapat menerima argumen bisa juga tidak.
+		Dengan deklarasi konstruktor seperti dibawah, dapat dipanggil dengan new PublicClass() dan new PublicClass(privateInt,publicString).
+	*/
+    PublicClass({int privateInt,String publicString}) {
+        if(privateInt!=null)this._privateInt = privateInt;
+		if(publicString!=null)this.publicString = publicString;
     }
     
     // 7a. Cara mendefinisikan method dengan parameter tanpa return value
