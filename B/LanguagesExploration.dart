@@ -68,8 +68,7 @@ class PublicSubClass extends PublicClass {
     }
 }
 
-public class LanguagesExploration {
-    public static void main(String[] args) {
+void main() {
         // 14. Cara menginstansiasi kelas baru
         PublicClass publicClass = new PublicClass();
         
@@ -86,10 +85,13 @@ public class LanguagesExploration {
         System.out.println("[World!] publicClass.publicString = " + publicClass.publicString);
         
         // 19. Cara mengisi nilai atribut statik
+        //Sama seperti java, atribut statik dipanggil dari kelasnya kemudian dapat diisi dengan suatu nilai literal.
         PublicClass.staticInt = 10;
         
         // 20. Cara mendapatkan nilai atribut statik
-        System.out.println("[10] PublicClass.staticInt = " + PublicClass.staticInt);
+        //Sama seperti java, atribut statik didapat dengan cara memanggilnya dari kelasnya.
+        //Untuk mengoutputkan nilai integer ke layar dilakukan dengan ${value}, dengan value adalah nilai integer tersebut.
+        print("[10] PublicClass.staticInt = ${PublicClass.staticInt}");
         
         // 21. Cara mendapatkan nilai konstanta
         System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
