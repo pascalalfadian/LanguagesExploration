@@ -32,7 +32,7 @@ class PublicClass {
     }
     
     // 7a. Cara mendefinisikan method dengan parameter tanpa return value
-    
+    void printNumber print('The number is $number.');
    
     // 7b. Cara menuliskan dokumentasi untuk method 7a
     
@@ -67,7 +67,7 @@ class PublicSubClass extends PublicClass {
     
     // 12. Cara melakukan override method
     num getPrivateInt() {
-    
+ 
     // 13. Cara mengakses method pada superclass
     return 2 * super.getPrivateInt();
     }
