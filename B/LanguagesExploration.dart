@@ -32,7 +32,11 @@ class PublicClass {
     }
     
     // 7a. Cara mendefinisikan method dengan parameter tanpa return value
+    
+   
     // 7b. Cara menuliskan dokumentasi untuk method 7a
+    
+    
     /**
      * Mengubah nilai atribut privateInt
      * @param privateInt nilai privateInt yang baru.
@@ -62,7 +66,7 @@ class PublicClass {
 class PublicSubClass extends PublicClass {
     
     // 12. Cara melakukan override method
-    public int getPrivateInt() {
+    num getPrivateInt() {
     
     // 13. Cara mengakses method pada superclass
     return 2 * super.getPrivateInt();
