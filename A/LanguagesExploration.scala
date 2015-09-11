@@ -33,7 +33,7 @@ class PublicClass {
    *  Mengubah nilai atribut privateInt
    *  @param privateInt nilai privateInt yang baru.
    */
-  def setPrivateInt_=(privateInt: Int):Unit {
+  def setPrivateInt (privateInt: Int):Unit = {
     // 8. Cara mengisi atribut dari dalam kelas itu sendiri
     this.privateInt = privateInt
   }
