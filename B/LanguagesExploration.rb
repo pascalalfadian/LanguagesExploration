@@ -5,10 +5,10 @@ class PublicClass {
     @privateInt
     
     # 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
-    @publicString = "Hello";
+    @publicString = "Hello"
     
     # 4. Cara mendefinisikan atribut statik
-    @@staticInt;
+    @@staticInt
     
     # 5. Cara mendefinisikan konstanta
-    PI = 3.14;
+    PI = 3.14
