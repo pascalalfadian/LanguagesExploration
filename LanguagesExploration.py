@@ -1,15 +1,14 @@
-
 # 1. Cara mendifinisikan kelas
 class PublicClass():
 
     # 2. Cara mendefinisikan atribut privat bertipe int
-    privateInt=0;
+    privateInt = 0;
 
     # 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
     publicString = "Hello";
 
     # 4. Cara mendefinisikan atribut statik
-    staticInt=0;
+    staticInt = 0;
 
     # 5. Cara mendefinisikan konstanta
     """static final double PI = 3.14;
@@ -26,8 +25,9 @@ class PublicClass():
     '''
      Mengubah nilai atribut privateInt
      @param privateInt nilai privateInt yang baru.
-     '''
-    def setPrivateInt(self,privateInt):
+     ''' #error kenapa ya?
+     
+    def setPrivateInt(self, privateInt):
         # 8. Cara mengisi atribut dari dalam kelas itu sendiri
         self.privateInt = privateInt;
 
@@ -42,7 +42,6 @@ class PublicClass():
     def getPrivateInt(self):
         # 10. Cara mengembalikan nilai
         return privateInt;
-
 
 
 # 11. Cara menurunkan kelas
@@ -87,5 +86,4 @@ class LanguagesExploration():
         publicSubClass.setPrivateInt(13);
 
         # 23. Memastikan method overriding bekerja
-        print("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt());
-
+        print("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt()); #yg ini juga?
