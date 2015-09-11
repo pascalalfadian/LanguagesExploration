@@ -12,9 +12,35 @@ class PublicClass {
     
     # 5. Cara mendefinisikan konstanta
     PI = 3.14
-
-
-
+    
+    # 6. Cara mendefinisikan konstruktor
+    def initialize
+        # kosong
+    end
+    
+    # 7a. Cara mendefinisikan method dengan parameter tanpa return value
+    # 7b. Cara menuliskan dokumentasi untuk method 7a
+    
+    # Mengubah nilai atribut privateInt
+    # @param privateInt nilai privateInt yang baru.
+    
+    def setPrivateInt(privateInt) 
+        # 8. Cara mengisi atribut dari dalam kelas itu sendiri
+        @privateInt = privateInt
+    end
+    
+    # 9a. Cara mendefinisikan method dengan return value
+    # 9b. Cara menuliskan dokumentasi untuk method 9a
+    /**
+     * Mendapatkan nilai dari atribut privateInt
+     * @return nilai dari privateInt
+     */
+    def getPrivateInt 
+        
+        # 10. Cara mengembalikan nilai
+        @privateInt
+    }
+}
 
 public class LanguagesExploration {
     public static void main(String[] args) {
