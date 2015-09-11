@@ -27,7 +27,7 @@ class PublicClass():
      Mengubah nilai atribut privateInt
      @param privateInt nilai privateInt yang baru.
      '''
-    def setPrivateInt(privateInt):
+    def setPrivateInt(self,privateInt):
         # 8. Cara mengisi atribut dari dalam kelas itu sendiri
         self.privateInt = privateInt;
 
@@ -39,7 +39,7 @@ class PublicClass():
      @return nilai dari privateInt
      '''
 
-    def getPrivateInt(self, privateInt):
+    def getPrivateInt(self):
         # 10. Cara mengembalikan nilai
         return privateInt;
 
