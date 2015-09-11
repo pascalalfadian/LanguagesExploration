@@ -84,10 +84,11 @@ void main() {
     print("[13] publicClass.getPrivateInt() =  ${publicClass.getPrivateInt()}");
         
     // 17. Cara mengubah isi atribut publik dari luar kelas
+    // Pada dart variable string dapat kita beri petik dua atau petik satu, keduanya memiliki fungsi yang sama
     publicClass.publicString = "World!";
         
     // 18. Cara mendapatkan isi atribut publik dari luar kelas
-    System.out.println("[World!] publicClass.publicString = " + publicClass.publicString);
+    print("[World!] publicClass.publicString = ${publicClass.publicString}");
         
     // 19. Cara mengisi nilai atribut statik
     //Sama seperti java, atribut statik dipanggil dari kelasnya kemudian dapat diisi dengan suatu nilai literal.
@@ -99,14 +100,15 @@ void main() {
     print("[10] PublicClass.staticInt = ${PublicClass.staticInt}");
         
     // 21. Cara mendapatkan nilai konstanta
-    System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
+    print("[3.14] PublicClass.PI = ${PublicClass.PI}");
         
     // 22. Cara menginstansiasi kelas dengan turunannya
+    //Pada dart menginstansiasi kelas memiliki cara yang sama dengan java
     PublicClass publicSubClass = new PublicSubClass();
         
     publicSubClass.setPrivateInt(13);
         
     // 23. Memastikan method overriding bekerja
-    System.out.println("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt());
+    print("[26] publicSubClass.getPrivateInt() = ${publicSubClass.getPrivateInt()}");
     
 }
