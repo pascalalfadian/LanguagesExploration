@@ -58,7 +58,7 @@ class PublicSubClass extends PublicClass {
     public override int getPrivateInt() {
     
     // 13. Cara mengakses method pada superclass
-    return 2 * super.getPrivateInt();
+    return 2 * base.getPrivateInt();
     }
 }
 
