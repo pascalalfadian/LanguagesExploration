@@ -57,7 +57,8 @@ class PublicClass {
     }
 }
 
-// 11. Cara menurunkan kelas
+// 11. Cara menurunkan kelas\
+// Cara menurunkan kelas di Dart sama dengan di java dengan keyword extends
 class PublicSubClass extends PublicClass {
     
     // 12. Cara melakukan override method
@@ -72,9 +73,11 @@ class PublicSubClass extends PublicClass {
 void main() {
         
     // 14. Cara menginstansiasi kelas baru
+    // Mengistansiasi kelas baru pada dart sama dengan yang ada di java
     PublicClass publicClass = new PublicClass();
         
     // 15. Cara memanggil method dengan parameter
+    // Memanggil method pada dart sama seperti pada java
     publicClass.setPrivateInt(13);
         
     // 16. Cara memanggil method dan mendapatkan return value-nya
