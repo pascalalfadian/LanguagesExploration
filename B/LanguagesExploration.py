@@ -11,17 +11,17 @@ class PublicClass:
     # 5.Cara mendefinisikan konstanta
     self.PI=3.14
 
-# 7a. Cara mendefinisikan method dengan parameter tanpa return value
-# 7b. Cara menuliskan dokumentasi untuk method 7a
+  # 7a. Cara mendefinisikan method dengan parameter tanpa return value
+  # 7b. Cara menuliskan dokumentasi untuk method 7a
 
-def setPrivateInt(self, privateInt):
+  def setPrivateInt(self, privateInt):
     # 8. Cara mengisi atribut dari dalam kelas itu sendiri
     self.privateInt=privateInt
 
-# 9a. Cara mendefinisikan method dengan return value
-# 9b. Cara menuliskan dokumentasi untuk method 9a
+  # 9a. Cara mendefinisikan method dengan return value
+  # 9b. Cara menuliskan dokumentasi untuk method 9a
 
-def getPrivateInt(self):
+  def getPrivateInt(self):
     # 10. Cara mengembalikan nilai
     return self.privateInt
   
