@@ -52,7 +52,7 @@ class PublicClass {
 }
 
 // 11. Cara menurunkan kelas
-class PublicSubClass extends PublicClass {
+class PublicSubClass : PublicClass {
     
     // 12. Cara melakukan override method
     public override int getPrivateInt() {
