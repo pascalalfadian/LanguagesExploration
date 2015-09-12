@@ -31,3 +31,16 @@ class PublicSubClass(PublicClass):
   def getprivateInt(self):
   # 13. Cara mengakses method pada superclass
   return 2 * super(PublicSubClass, self).getPrivateInt()
+
+class LanguagesExploration():
+  # 14. Cara menginstansiasi kelas baru
+  publicClass=PublicClass()
+  # 15. Cara memanggil method dengan parameter
+  publicClass.setPrivateInt(13)
+  # 16. Cara memanggil method dan mendapatkan return value-nya
+  print("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt())
+  # 17. Cara mengubah isi atribut publik dari luar kelas
+  publicClass.publicString = "World!"
+  # 18. Cara mendapatkan isi atribut publik dari luar kelas
+  print("[World!] publicClass.publicString = " + publicClass.publicString)
+  
