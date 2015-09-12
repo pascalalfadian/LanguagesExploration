@@ -1,10 +1,9 @@
 # 1. Cara mendefinisikan kelas
 class PublicClass:
+  # 2. Cara mendefiniskan atribut bertipe int
+  __privateInt=0
   # 6. Cara mendefinisikan konstruktor 
   def __init__(self):
-    # 2. Cara mendefiniskan atribut bertipe int
-    self.privateInt=0
-    
     # 3. Cara mendefinisikan atribut bertipe string, dan mengisi dengan nilai awal
     self.publicString="Hello"
     
@@ -16,14 +15,14 @@ class PublicClass:
 
   def setPrivateInt(self, privateInt):
     # 8. Cara mengisi atribut dari dalam kelas itu sendiri
-    self.privateInt=privateInt
+    self.__privateInt=privateInt
 
   # 9a. Cara mendefinisikan method dengan return value
   # 9b. Cara menuliskan dokumentasi untuk method 9a
 
   def getPrivateInt(self):
     # 10. Cara mengembalikan nilai
-    return self.privateInt
+    return self.__privateInt
   
 # 11. Cara menurunkan kelas
 class PublicSubClass(PublicClass):
