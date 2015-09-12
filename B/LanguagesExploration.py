@@ -1,5 +1,6 @@
-
+# Cara mendefinisikan kelas
 class PublicClass:
+  # konstruktor 
   def __init__(self):
     self.privateInt=0
     self.publicString="hello"
