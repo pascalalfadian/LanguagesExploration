@@ -17,3 +17,17 @@ class PublicClass:
 def setPrivateInt(self, privateInt):
     # 8. Cara mengisi atribut dari dalam kelas itu sendiri
     self.privateInt=privateInt
+
+# 9a. Cara mendefinisikan method dengan return value
+# 9b. Cara menuliskan dokumentasi untuk method 9a
+
+def getPrivateInt(self):
+    # 10. Cara mengembalikan nilai
+    return self.privateInt
+  
+# 11. Cara menurunkan kelas
+class PublicSubClass(PublicClass):
+  # 12. Cara melakukan override method
+  def getprivateInt(self):
+  # 13. Cara mengakses method pada superclass
+  return 2 * super(PublicSubClass, self).getPrivateInt()
