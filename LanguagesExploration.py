@@ -11,6 +11,7 @@ class PublicClass:
     staticInt = 0
 
     # 5. Cara mendefinisikan konstanta
+    # Python tidak memiliki final.
     PI = 3.14
     
 
