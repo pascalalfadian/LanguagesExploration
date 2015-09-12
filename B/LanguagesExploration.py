@@ -43,4 +43,9 @@ class LanguagesExploration():
   publicClass.publicString = "World!"
   # 18. Cara mendapatkan isi atribut publik dari luar kelas
   print("[World!] publicClass.publicString = " + publicClass.publicString)
-  
+  # 19. Cara mengisi nilai atribut statik 
+  publicClass.staticInt=10
+  # 20. Cara mendapatkan nilai atribut statik 
+  print("[10] publicClass.staticInt = %s"%publicClass.staticInt)
+  # 21. Cara mendapatkan nilai konstanta 
+  print("[3.14] publicClass.PI = %s"%publicClass.PI)
