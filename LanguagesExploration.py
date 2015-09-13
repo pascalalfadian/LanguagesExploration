@@ -11,35 +11,44 @@ class PublicClass:
     staticInt = 0
 
     # 5. Cara mendefinisikan konstanta
-    # Python tidak memiliki final.
-    PI = 3.14
+    PI = 3.14  #Python tidak memiliki final. 
     
-
-
     # 6. Cara mendefinisikan konstruktor
     def __init__(self):
         # kosong
 
 
+
+
+
     # 7a. Cara mendefinisikan method dengan parameter tanpa return value
     # 7b. Cara menuliskan dokumentasi untuk method 7a
+   
     def setPrivateInt(self, privateInt):
         # 8. Cara mengisi atribut dari dalam kelas itu sendiri
+        
         self.privateInt = privateInt
+
+
+
+
 
 
     # 9a. Cara mendefinisikan method dengan return value
     # 9b. Cara menuliskan dokumentasi untuk method 9a
     def getPrivateInt(self):
         # 10. Cara mengembalikan nilai
+        
         return privateInt
+
 
 
 # 11. Cara menurunkan kelas
 class PublicSubClass(PublicClass):
-
+    
     # 12. Cara melakukan override method
     def getPrivateInt(self):
+        
         # 13. Cara mengakses method pada superclass
         return 2 * getPrivateInt()
 
