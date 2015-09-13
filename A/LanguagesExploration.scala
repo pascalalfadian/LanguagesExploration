@@ -79,7 +79,7 @@ class PublicSubClass extends PublicClass {
    * Returns the private int of this class, which is 2 times
    * its ancestor's private integer.
    */
-  def getPrivateInt() : Int = {
+  override def getPrivateInt() : Int = {
   
     // 13. Cara mengakses method pada superclass
     2 * super.getPrivateInt
@@ -121,9 +121,9 @@ object LanguagesExploration {
     println("[3.14] PublicClass.PI = " + PublicClass.PI)
     
     // 22. Cara menginstansiasi kelas dengan turunannya
-    var publicSubClass = new PublicSubClass
+    var publicSubClass = new PublicSubClass()
     
-    publicSubClass.setPrivateInt_=(13)
+    publicSubClass.setPrivateInt(13)
     
     // 23. Memastikan method overriding bekerja
     println("[26] publicSubClass.getPrivateInt() = " + publicClass.getPrivateInt())
