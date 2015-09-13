@@ -48,3 +48,6 @@ class LanguagesExploration():
   print("[10] publicClass.staticInt = %s"%publicClass.staticInt)
   # 21. Cara mendapatkan nilai konstanta 
   print("[3.14] publicClass.PI = %s"%publicClass.PI)
+  # 22. Cara menginstansiasi kelas dengan turunannya
+  publicSubClass = PublicSubClass();
+  publicSubClass.setPrivateInt(13);
