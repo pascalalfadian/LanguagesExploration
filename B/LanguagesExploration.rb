@@ -51,6 +51,9 @@ public class LanguagesExploration {
         
         // 15. Cara memanggil method dengan parameter
         publicClass.setPrivateInt(13);
+        irb(main):014:0> setPrivateInt(params)
+        Ubah Integer!
+        => nil
         
         // 16. Cara memanggil method dan mendapatkan return value-nya
         System.out.println("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt());
