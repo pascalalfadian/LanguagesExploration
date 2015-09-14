@@ -47,7 +47,7 @@ class PublicClass {
 class LanguagesExploration {
     public static void main(String[] args) {
         // 14. Cara menginstansiasi kelas baru
-        PublicClass publicClass = new PublicClass();
+        publicClass = PublicClass.new();
         
         // 15. Cara memanggil method dengan parameter
         publicClass.setPrivateInt(13);
