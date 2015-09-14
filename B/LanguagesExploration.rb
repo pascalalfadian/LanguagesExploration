@@ -50,15 +50,16 @@ end
 
 
 # 11. Cara menurunkan kelas
-class PublicSubClass < PublicClass {
+class PublicSubClass < PublicClass 
     
     # 12. Cara melakukan override method
     def getPrivateInt 
     
     # 13. Cara mengakses method pada superclass
-    return 2 * super.getPrivateInt();
+    return 2 * super
     
 end
+
 
 class LanguagesExploration 
     public static void main(String[] args) 
