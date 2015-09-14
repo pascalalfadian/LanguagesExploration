@@ -33,15 +33,16 @@ class PublicClass {
     
     # 9a. Cara mendefinisikan method dengan return value
     # 9b. Cara menuliskan dokumentasi untuk method 9a
-    /**
-     * Mendapatkan nilai dari atribut privateInt
-     * @return nilai dari privateInt
-     */
+    =begin
+      Mendapatkan nilai dari atribut privateInt
+      @return nilai dari privateInt
+    =end
     def getPrivateInt 
         
         # 10. Cara mengembalikan nilai
-        @privateInt
-    }
+        return @privateInt
+    end
+    
 }
 
 class LanguagesExploration {
