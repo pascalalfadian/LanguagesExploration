@@ -39,6 +39,7 @@ class PublicClass
       Mendapatkan nilai dari atribut privateInt
       @return nilai dari privateInt
     =end
+    
     def getPrivateInt 
         
         # 10. Cara mengembalikan nilai
