@@ -1,11 +1,9 @@
-// 1. Cara mendifinisikan kelas
-class PublicClass {
-
+  // 1. Cara mendifinisikan kelas
+  class PublicClass {
   // 2. Cara mendefinisikan atribut privat bertipe int
   int _privateInt;
   // 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal ==> var s = 'Hello';
   var publicString = "Hello";
-
  // 4. Cara mendefinisikan atribut statik ==> static void bar() {} // A static method
   static var staticInt;
 
@@ -34,6 +32,7 @@ class PublicClass {
   }
   // 9a. Cara mendefinisikan method dengan return value
   // 9b. Cara menuliskan dokumentasi untuk method 9a
+  
   /// Method say mengembalikan String pesan dengan format
   /// [from] mengirim [msg] menggunakan [device]
   ///
@@ -83,5 +82,11 @@ class LanguagesExploration {
 
     // 17. Cara mengubah isi atribut publik dari luar kelas
     publicClass.publicString = "World!";
+    
+    // 18. Cara mendapatkan isi atribut publik dari luar kelas
+    print("[World!] publicClass.publicString = " + publicClass.publicString);
+
+    // 19. Cara mengisi nilai atribut statik
+    PublicClass.staticInt = 10;
   }
 }
