@@ -32,3 +32,56 @@ class PublicClass {
     // 8. Cara mengisi atribut dari dalam kelas itu sendiri
     _privateInt = newPrivateInt;
   }
+  // 9a. Cara mendefinisikan method dengan return value
+  // 9b. Cara menuliskan dokumentasi untuk method 9a
+  /// Method say mengembalikan String pesan dengan format
+  /// [from] mengirim [msg] menggunakan [device]
+  ///
+  String say(String from, String msg, [String device]) {
+    var result = '$from says $msg';
+    if (device != null) {
+      result = '$result with a $device';
+    }
+    return result;
+  }
+
+
+  ///
+  /// Mendapatkan nilai dari atribut privateInt
+  /// @return nilai dari privateInt
+  ///
+  num getPrivateInt() {
+    // 10. Cara mengembalikan nilai
+    return this.privateInt;
+    }
+}
+
+// 11. Cara menurunkan kelas
+class PublicSubClass extends PublicClass {
+
+  // 12. Cara melakukan override method
+  num getPrivateInt() {
+
+    // 13. Cara mengakses method pada superclass
+   // super.setPrivateInt(2); //
+    var temp = super.getPrivateInt();
+    //return 2*temp; null
+  }
+}
+
+class LanguagesExploration {
+  void main() {
+    // 14. Cara menginstansiasi kelas baru
+    var publicClass = new PublicClass();
+
+    // 15. Cara memanggil method dengan parameter
+    publicClass.setPrivateInt(13);
+
+    // 16. Cara memanggil method dan mendapatkan return value-nya
+   // var temp = publicClass.getPrivateInt();
+    print("[13]publicClass.getPrivateInt() = "+ publicClass.getPrivateInt().toString());
+
+    // 17. Cara mengubah isi atribut publik dari luar kelas
+    publicClass.publicString = "World!";
+  }
+}
