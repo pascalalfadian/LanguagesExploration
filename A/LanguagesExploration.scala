@@ -126,6 +126,6 @@ object LanguagesExploration {
     publicSubClass.setPrivateInt(13)
     
     // 23. Memastikan method overriding bekerja
-    println("[26] publicSubClass.getPrivateInt() = " + publicClass.getPrivateInt())
+    println("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt())
   }
 }
