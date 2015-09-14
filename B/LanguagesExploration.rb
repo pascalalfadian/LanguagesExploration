@@ -47,6 +47,18 @@ class PublicClass
     
 end
 
+
+# 11. Cara menurunkan kelas
+class PublicSubClass extends PublicClass {
+    
+    # 12. Cara melakukan override method
+    public int getPrivateInt() {
+    
+    # 13. Cara mengakses method pada superclass
+    return 2 * super.getPrivateInt();
+    }
+}
+
 class LanguagesExploration 
     public static void main(String[] args) 
         # 14. Cara menginstansiasi kelas baru
