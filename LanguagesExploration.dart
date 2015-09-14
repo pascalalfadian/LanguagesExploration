@@ -88,5 +88,11 @@ class LanguagesExploration {
 
     // 19. Cara mengisi nilai atribut statik
     PublicClass.staticInt = 10;
+    
+    // 20. Cara mendapatkan nilai atribut statik
+    System.out.println("[10] PublicClass.staticInt = " + PublicClass.staticInt);
+        
+    // 21. Cara mendapatkan nilai konstanta
+    System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
   }
 }
