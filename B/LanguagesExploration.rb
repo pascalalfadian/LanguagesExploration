@@ -44,7 +44,7 @@ class PublicClass {
     }
 }
 
-public class LanguagesExploration {
+class LanguagesExploration {
     public static void main(String[] args) {
         // 14. Cara menginstansiasi kelas baru
         PublicClass publicClass = new PublicClass();
