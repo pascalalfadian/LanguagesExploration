@@ -21,12 +21,14 @@ class PublicClass
     # 7a. Cara mendefinisikan method dengan parameter tanpa return value
     def setPrivateInt(params)
     end
+    
     # 7b. Cara menuliskan dokumentasi untuk method 7a
     
     # Mengubah nilai atribut privateInt
     # @param privateInt nilai privateInt yang baru.
     
-    def setPrivateInt(privateInt) 
+    def setPrivateInt(privateInt)
+        
         # 8. Cara mengisi atribut dari dalam kelas itu sendiri
         @privateInt = privateInt
     end
