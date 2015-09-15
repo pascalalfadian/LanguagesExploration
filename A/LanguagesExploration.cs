@@ -71,7 +71,7 @@ public class LanguagesExploration {
         publicClass.setPrivateInt(13);
         
         // 16. Cara memanggil method dan mendapatkan return value-nya
-        System.out.println("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt());
+        Console.WriteLine("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt());
         
         // 17. Cara mengubah isi atribut publik dari luar kelas
         publicClass.publicString = "World!";
