@@ -94,5 +94,13 @@ class LanguagesExploration {
         
     // 21. Cara mendapatkan nilai konstanta
     System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
+    
+    // 22. Cara menginstansiasi kelas dengan turunannya
+    var publicSubClass = new PublicSubClass();
+
+    publicSubClass.setPrivateInt(13);
+
+    // 23. Memastikan method overriding bekerja
+    print("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt().toString());
   }
 }
