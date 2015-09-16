@@ -11,7 +11,7 @@ class PublicClass {
     public static int staticInt;
     
     // 5. Cara mendefinisikan konstanta
-    public static final double PI = 3.14;
+    static const PI = 3.14;
     
     // 6. Cara mendefinisikan konstruktor
     /*
@@ -50,6 +50,8 @@ class PublicClass {
     }
     
     // 9a. Cara mendefinisikan method dengan return value
+    
+    
     // 9b. Cara menuliskan dokumentasi untuk method 9a
     /**
      * Mendapatkan nilai dari atribut privateInt
@@ -58,7 +60,7 @@ class PublicClass {
     public int getPrivateInt() {
         
         // 10. Cara mengembalikan nilai
-        return this.privateInt;
+        return this._privateInt;
     }
 }
 
