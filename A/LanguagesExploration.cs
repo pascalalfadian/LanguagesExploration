@@ -22,14 +22,14 @@ class PublicClass {
     
     // 7a. Cara mendefinisikan method dengan parameter tanpa return value
     // 7b. Cara menuliskan dokumentasi untuk method 7a
-     ///<summary>
-   ///komentar yang muncul di kolom deskripsi
-   ///</summary>
-   ///<remarks>
-   ///penjelasan untuk method setPrivateInt di bagian remark
-   ///</remarks>
+    ////<summary>
+    ///komentar yang muncul di kolom deskripsi
+    ///</summary>
+    ///<remarks>
+    ///penjelasan untuk method setPrivateInt di bagian remark
+    ///</remarks>
     public void setPrivateInt(int privateInt) {
-         this.privateInt = privateInt;
+        this.privateInt = privateInt;
         // 8. Cara mengisi atribut dari dalam kelas itu sendiri
         this.privateInt = privateInt;
     }
@@ -39,11 +39,11 @@ class PublicClass {
     /*Mendapatkan nilai dari atribut privateInt
     @return nilai dari privateInt*/
     ///<summary>
-   ///komentar yang muncul di kolom deskripsi
-   ///</summary>
-   ///<remarks>
-   ///penjelasan untuk method getPrivateInt di bagian remark
-   ///</remarks>
+    ///komentar yang muncul di kolom deskripsi
+    ///</summary>
+    ///<remarks>
+    ///penjelasan untuk method getPrivateInt di bagian remark
+    ///</remarks>
     public int getPrivateInt() {
         
         // 10. Cara mengembalikan nilai
@@ -57,18 +57,21 @@ class PublicSubClass : PublicClass {
     // 12. Cara melakukan override method
     public override int getPrivateInt() {
     
-    // 13. Cara mengakses method pada superclass
-    return 2 * base.getPrivateInt();
+        // 13. Cara mengakses method pada superclass
+        return 2 * base.getPrivateInt();
     }
 }
 
 public class LanguagesExploration {
+    
     public static void Main(String[] args) {
         // 14. Cara menginstansiasi kelas baru
         PublicClass publicClass = new PublicClass();
         
         // 15. Cara memanggil method dengan parameter
-        publicClass.setPrivateInt(13);
+        // Memanggil method berparameter yakni "public void setPrivateInt(int privateInt)"
+        // Dengan masukan angka 17
+        publicClass.setPrivateInt(17);
         
         // 16. Cara memanggil method dan mendapatkan return value-nya
         Console.WriteLine("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt());
@@ -86,7 +89,7 @@ public class LanguagesExploration {
         Console.WriteLine("[10] PublicClass.staticInt = " + PublicClass.staticInt);
         
         // 21. Cara mendapatkan nilai konstanta
-        System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
+        Console.WriteLine("[3.14] PublicClass.PI = "+PublicClass.PI);
         
         // 22. Cara menginstansiasi kelas dengan turunannya
         PublicClass publicSubClass = new PublicSubClass();
