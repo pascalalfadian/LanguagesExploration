@@ -33,7 +33,7 @@ class PublicClass {
     
     // 7a. Cara mendefinisikan method dengan parameter tanpa return value
    
- void printNumber(num number) => print('The number is $number.');
+    void printNumber(num number) => print('The number is $number.');
    
     // 7b. Cara menuliskan dokumentasi untuk method 7a
     
@@ -62,7 +62,7 @@ class PublicClass {
     }
 }
 
-// 11. Cara menurunkan kelas\
+// 11. Cara menurunkan kelas
 // Cara menurunkan kelas di Dart sama dengan di java dengan keyword extends
 class PublicSubClass extends PublicClass {
     
@@ -96,19 +96,19 @@ void main() {
     print("[World!] publicClass.publicString = ${publicClass.publicString}");
         
     // 19. Cara mengisi nilai atribut statik
-    //Sama seperti java, atribut statik dipanggil dari kelasnya kemudian dapat diisi dengan suatu nilai literal.
+    // Sama seperti java, atribut statik dipanggil dari kelasnya kemudian dapat diisi dengan suatu nilai literal.
     PublicClass.staticInt = 10;
         
     // 20. Cara mendapatkan nilai atribut statik
-    //Sama seperti java, atribut statik didapat dengan cara memanggilnya dari kelasnya.
-    //Untuk mengoutputkan nilai integer ke layar dilakukan dengan ${value}, dengan value adalah nilai integer tersebut.
+    // Sama seperti java, atribut statik didapat dengan cara memanggilnya dari kelasnya.
+    // Untuk mengoutputkan nilai integer ke layar dilakukan dengan ${value}, dengan value adalah nilai integer tersebut.
     print("[10] PublicClass.staticInt = ${PublicClass.staticInt}");
         
     // 21. Cara mendapatkan nilai konstanta
     print("[3.14] PublicClass.PI = ${PublicClass.PI}");
         
     // 22. Cara menginstansiasi kelas dengan turunannya
-    //Pada dart menginstansiasi kelas memiliki cara yang sama dengan java
+    // Pada dart menginstansiasi kelas memiliki cara yang sama dengan java
     PublicClass publicSubClass = new PublicSubClass();
         
     publicSubClass.setPrivateInt(13);
