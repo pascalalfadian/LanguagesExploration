@@ -70,8 +70,8 @@ public class LanguagesExploration {
         
         // 15. Cara memanggil method dengan parameter
         // Memanggil method berparameter yakni "public void setPrivateInt(int privateInt)"
-        // Dengan masukan angka 17
-        publicClass.setPrivateInt(17);
+        // Dengan masukan angka 13
+        publicClass.setPrivateInt(13);
         
         // 16. Cara memanggil method dan mendapatkan return value-nya
         Console.WriteLine("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt());
