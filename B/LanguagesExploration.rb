@@ -57,6 +57,7 @@ class PublicSubClass < PublicClass
     
     # 13. Cara mengakses method pada superclass
     return 2 * super
+end
     
 end
 
