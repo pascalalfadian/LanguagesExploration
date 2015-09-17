@@ -61,7 +61,7 @@ object LanguagesExploration {
 	def main(args: Array[String]): Unit = {
 
 		//14. Cara menginstansiasi kelas baru
-		val publicClass = new PublicClass
+		var publicClass = new PublicClass()
 		
 		//15. Cara memanggil method dengan parameter  
 		publicClass.setPrivateInt(13)
