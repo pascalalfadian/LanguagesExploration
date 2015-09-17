@@ -73,10 +73,10 @@ class LanguagesExploration {
     PublicClass.staticInt = 10;
     
     // 20. Cara mendapatkan nilai atribut statik
-    System.out.println("[10] PublicClass.staticInt = " + PublicClass.staticInt);
-        
+    print("[10] PublicClass.staticInt = " + PublicClass.staticInt.toString());
+
     // 21. Cara mendapatkan nilai konstanta
-    System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
+    print("[3.14] PublicClass.PI = " + PublicClass.PI.toString());
     
     // 22. Cara menginstansiasi kelas dengan turunannya
     var publicSubClass = new PublicSubClass();
