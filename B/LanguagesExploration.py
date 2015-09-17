@@ -52,3 +52,5 @@ class LanguagesExploration():
     # 22. Cara menginstansiasi kelas dengan turunannya
     publicSubClass = PublicSubClass();
     publicSubClass.setPrivateInt(13);
+if  __name__="__main__":
+  LanguagesExploration().main()
