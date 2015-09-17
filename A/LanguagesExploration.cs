@@ -28,7 +28,7 @@ class PublicClass {
     ///<remarks>
     ///penjelasan untuk method setPrivateInt di bagian remark
     ///</remarks>
-    public void setPrivateInt(int privateInt) {
+    public void SetPrivateInt(int privateInt) {
         this.privateInt = privateInt;
         // 8. Cara mengisi atribut dari dalam kelas itu sendiri
         this.privateInt = privateInt;
@@ -44,7 +44,7 @@ class PublicClass {
     ///<remarks>
     ///penjelasan untuk method getPrivateInt di bagian remark
     ///</remarks>
-    public int getPrivateInt() {
+    public virtual int GetPrivateInt() {
         
         // 10. Cara mengembalikan nilai
         return this.privateInt;
@@ -55,10 +55,10 @@ class PublicClass {
 class PublicSubClass : PublicClass {
     
     // 12. Cara melakukan override method
-    public override int getPrivateInt() {
+    public override int GetPrivateInt() {
     
         // 13. Cara mengakses method pada superclass
-        return 2 * base.getPrivateInt();
+        return 2 * base.GetPrivateInt();
     }
 }
 
