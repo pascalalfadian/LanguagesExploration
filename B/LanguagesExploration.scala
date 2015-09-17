@@ -50,8 +50,8 @@ class PublicSubClass extends PublicClass{
 }
 
 //13. Cara mendefinisikan konstruktor
-class PublicClass2(// kosong){
-	
+class PublicClass2(){
+	// kosong
 }
 
 object LanguagesExploration {
