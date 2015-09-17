@@ -35,10 +35,10 @@ class PublicClass
     
     # 9a. Cara mendefinisikan method dengan return value
     # 9b. Cara menuliskan dokumentasi untuk method 9a
-    =begin
-      Mendapatkan nilai dari atribut privateInt
-      @return nilai dari privateInt
-    =end
+    
+    #  Mendapatkan nilai dari atribut privateInt
+    #  @return nilai dari privateInt
+    
     
     def getPrivateInt 
         
@@ -62,8 +62,7 @@ end
 end
 
 
-class LanguagesExploration 
-    public static void main(String[] args) 
+
         # 14. Cara menginstansiasi kelas baru
         publicClass = PublicClass.new
         
@@ -103,5 +102,4 @@ class LanguagesExploration
         print "[26] publicSubClass.getPrivateInt() = "
         puts publicSubClass.getPrivateInt
         
-    end
-end
+
