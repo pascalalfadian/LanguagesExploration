@@ -19,9 +19,6 @@
   /// String tanpa kembalian
   ///
   // 7a. Cara mendefinisikan method dengan parameter tanpa return value
-  void printNumber(num number) {
-    print("The number is $number.");
-  }
 
   ///
   ///Mengubah nilai atribut privateInt menjadi [privateInt]
@@ -32,19 +29,6 @@
   }
   // 9a. Cara mendefinisikan method dengan return value
   // 9b. Cara menuliskan dokumentasi untuk method 9a
-  
-  /// Method say mengembalikan String pesan dengan format
-  /// [from] mengirim [msg] menggunakan [device]
-  ///
-  String say(String from, String msg, [String device]) {
-    var result = '$from says $msg';
-    if (device != null) {
-      result = '$result with a $device';
-    }
-    return result;
-  }
-
-
   ///
   /// Mendapatkan nilai dari atribut privateInt
   /// @return nilai dari privateInt
@@ -62,7 +46,6 @@ class PublicSubClass extends PublicClass {
   num getPrivateInt() {
 
     // 13. Cara mengakses method pada superclass
-   // super.setPrivateInt(2); //
     var temp = super.getPrivateInt();
     //return 2*temp; null
   }
