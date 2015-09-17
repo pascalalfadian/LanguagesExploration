@@ -5,7 +5,7 @@ class PublicClass
     @privateInt
     
     # 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
-    @publicString = "Hello"
+    $publicString = "Hello"
     
     # 4. Cara mendefinisikan atribut statik
     @@staticInt
@@ -68,36 +68,40 @@ class LanguagesExploration
         publicClass = PublicClass.new
         
         # 15. Cara memanggil method dengan parameter
-        publicClass.setPrivateInt(13);
-        irb(main):014:0> setPrivateInt(params)
-        Ubah Integer!
-        => nil
+        publicClass.setPrivateInt(13)
         
         # 16. Cara memanggil method dan mendapatkan return value-nya
         print "[13] publicClass.getPrivateInt() = "
         puts publicClass.getPrivateInt
         
-        // 17. Cara mengubah isi atribut publik dari luar kelas
-        publicClass.publicString = "World!";
+        # 17. Cara mengubah isi atribut publik dari luar kelas
+        $publicString = "World!"
         
-        // 18. Cara mendapatkan isi atribut publik dari luar kelas
-        System.out.println("[World!] publicClass.publicString = " + publicClass.publicString);
+        # 18. Cara mendapatkan isi atribut publik dari luar kelas
+        print "[World!] publicClass.publicString = "
+        puts $publicString
         
-        // 19. Cara mengisi nilai atribut statik
-        PublicClass.staticInt = 10;
         
-        // 20. Cara mendapatkan nilai atribut statik
-        System.out.println("[10] PublicClass.staticInt = " + PublicClass.staticInt);
+        # 19. Cara mengisi nilai atribut statik
+        @@staticInt = 10
+        
+        # 20. Cara mendapatkan nilai atribut statik
+        print "[10] PublicClass.staticInt = "
+        puts @@staticInt
+        
         
         // 21. Cara mendapatkan nilai konstanta
         System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
         
-        // 22. Cara menginstansiasi kelas dengan turunannya
-        PublicClass publicSubClass = new PublicSubClass();
+        # 22. Cara menginstansiasi kelas dengan turunannya
+        publicSubClass = PublicSubClass.new
         
-        publicSubClass.setPrivateInt(13);
         
-        // 23. Memastikan method overriding bekerja
-        System.out.println("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt());
+        publicSubClass.setPrivateInt(13)
+        
+        # 23. Memastikan method overriding bekerja
+        print "[26] publicSubClass.getPrivateInt() = "
+        puts publicSubClass.getPrivateInt
+        
     end
 end
