@@ -71,10 +71,10 @@ public class LanguagesExploration {
         // 15. Cara memanggil method dengan parameter
         // Memanggil method berparameter yakni "public void setPrivateInt(int privateInt)"
         // Dengan masukan angka 13
-        publicClass.setPrivateInt(13);
+        publicClass.SetPrivateInt(13);
         
         // 16. Cara memanggil method dan mendapatkan return value-nya
-        Console.WriteLine("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt());
+        Console.WriteLine("[13] publicClass.GetPrivateInt() = " + publicClass.GetPrivateInt());
         
         // 17. Cara mengubah isi atribut publik dari luar kelas
         publicClass.publicString = "World!";
@@ -94,9 +94,9 @@ public class LanguagesExploration {
         // 22. Cara menginstansiasi kelas dengan turunannya
         PublicClass publicSubClass = new PublicSubClass();
         
-        publicSubClass.setPrivateInt(13);
+        publicSubClass.SetPrivateInt(13);
         
         // 23. Memastikan method overriding bekerja
-        Console.WriteLine("[26] publicSubClass.getPrivateInt() = {0}", publicSubClass.getPrivateInt());
+        Console.WriteLine("[26] publicSubClass.GetPrivateInt() = {0}", publicSubClass.GetPrivateInt());
     }
 }
