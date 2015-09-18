@@ -17,47 +17,44 @@ class PublicClass {
     static const PI = 3.14;
     
     // 6. Cara mendefinisikan konstruktor
-    /*
-	Named Constructor
-	Jika mendeklarasikan konstruktor lebih dari satu, disarankan meberi nama konstruktor agar dapat dibedakan dengan jelas.
-    */
+    ///Named Constructor
+    ///Jika mendeklarasikan konstruktor lebih dari satu, disarankan meberi nama konstruktor agar dapat dibedakan dengan jelas.
     PublicClass.kosong(){
 	//kosong
     }
-    /*
-	Constructor with optional parameter.
-	Parameter di dalam brace {} merupakan optional parameter. Parameter tersebut dapat menerima argumen bisa juga tidak.
-	Dengan deklarasi konstruktor seperti dibawah, dapat dipanggil dengan new PublicClass() dan new PublicClass(privateInt,publicString).
-    */
+    
+    /// Constructor with optional parameter.
+    /// Parameter di dalam brace {} merupakan optional parameter. Parameter tersebut dapat menerima argumen bisa juga tidak.
+    /// Dengan deklarasi konstruktor seperti dibawah, dapat dipanggil dengan new PublicClass() dan new PublicClass(privateInt,publicString).
     PublicClass({int privateInt,String publicString}) {
         if(privateInt!=null)this._privateInt = privateInt;
-		if(publicString!=null)this.publicString = publicString;
+	 if(publicString!=null)this.publicString = publicString;
     }
     
     // 7a. Cara mendefinisikan method dengan parameter tanpa return value
     // 7b. Cara menuliskan dokumentasi untuk method 7a
     
-     ///Mengubah nilai atribut privateInt
-     ///[privateInt] nilai privateInt yang baru.
+     /// Mengubah nilai atribut privateInt.
+     /// [privateInt] nilai privateInt yang baru.
    void setPrivateInt(int privateInt) {
     
         // 8. Cara mengisi atribut dari dalam kelas itu sendiri
-        //Sama seperti java, untuk mengacu pada atribut kelas dapat menggunakan this.
+        // Sama seperti java, untuk mengacu pada atribut kelas dapat menggunakan this.
         this._privateInt = privateInt;
     }
     
     // 9a. Cara mendefinisikan method dengan return value
     // 9b. Cara menuliskan dokumentasi untuk method 9a
 
-     ///Mendapatkan nilai dari atribut privateInt
-     ///Return nilai dari privateInt
+     /// Mendapatkan nilai dari atribut privateInt.
+     /// Return nilai dari privateInt.
     int getPrivateInt() {
         
         // 10. Cara mengembalikan nilai
         return this._privateInt;
     }
-    //method getter v2
-    //public int getPrivateInt()=>this._privateInt;
+    // method getter v2
+    // public int getPrivateInt()=>this._privateInt;
 }
 
 // 11. Cara menurunkan kelas
@@ -66,9 +63,8 @@ class PublicSubClass extends PublicClass {
     
     // 12. Cara melakukan override method
     num getPrivateInt() {
- 
-    // 13. Cara mengakses method pada superclass
-    return 2 * super.getPrivateInt();
+    	// 13. Cara mengakses method pada superclass
+    	return 2 * super.getPrivateInt();
     }
 }
 
