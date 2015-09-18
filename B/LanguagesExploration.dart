@@ -32,17 +32,12 @@ class PublicClass {
     }
     
     // 7a. Cara mendefinisikan method dengan parameter tanpa return value
-   
-    void printNumber(num number) => print('The number is $number.');
-   
     // 7b. Cara menuliskan dokumentasi untuk method 7a
-    
-    
     /**
      * Mengubah nilai atribut privateInt
      * @param privateInt nilai privateInt yang baru.
      */
-    public void setPrivateInt(int privateInt) {
+   void setPrivateInt(num privateInt) {
     
         // 8. Cara mengisi atribut dari dalam kelas itu sendiri
         //Sama seperti java, untuk mengacu pada atribut kelas dapat menggunakan this.
