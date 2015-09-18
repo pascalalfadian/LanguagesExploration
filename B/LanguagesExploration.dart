@@ -36,11 +36,10 @@ class PublicClass {
     
     // 7a. Cara mendefinisikan method dengan parameter tanpa return value
     // 7b. Cara menuliskan dokumentasi untuk method 7a
-    /**
-     * Mengubah nilai atribut privateInt
-     * @param privateInt nilai privateInt yang baru.
-     */
-   void setPrivateInt(num privateInt) {
+    
+     ///Mengubah nilai atribut privateInt
+     ///[privateInt] nilai privateInt yang baru.
+   void setPrivateInt(int privateInt) {
     
         // 8. Cara mengisi atribut dari dalam kelas itu sendiri
         //Sama seperti java, untuk mengacu pada atribut kelas dapat menggunakan this.
@@ -51,10 +50,9 @@ class PublicClass {
     
     
     // 9b. Cara menuliskan dokumentasi untuk method 9a
-    /**
-     * Mendapatkan nilai dari atribut privateInt
-     * @return nilai dari privateInt
-     */
+
+     ///Mendapatkan nilai dari atribut privateInt
+     ///Return nilai dari privateInt
     public int getPrivateInt() {
         
         // 10. Cara mengembalikan nilai
