@@ -51,7 +51,7 @@ class PublicClass {
 
      ///Mendapatkan nilai dari atribut privateInt
      ///Return nilai dari privateInt
-    public int getPrivateInt() {
+    int getPrivateInt() {
         
         // 10. Cara mengembalikan nilai
         return this._privateInt;
