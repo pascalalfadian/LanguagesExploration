@@ -47,8 +47,6 @@ class PublicClass {
     }
     
     // 9a. Cara mendefinisikan method dengan return value
-    
-    
     // 9b. Cara menuliskan dokumentasi untuk method 9a
 
      ///Mendapatkan nilai dari atribut privateInt
@@ -89,7 +87,7 @@ void main() {
     print("[13] publicClass.getPrivateInt() =  ${publicClass.getPrivateInt()}");
         
     // 17. Cara mengubah isi atribut publik dari luar kelas
-    // Pada dart variable string dapat kita beri petik dua atau petik satu, keduanya memiliki fungsi yang sama
+    // Pada dart,cara mengisi variable string dapat kita beri petik dua atau petik satu, keduanya memiliki fungsi yang sama
     publicClass.publicString = "World!";
         
     // 18. Cara mendapatkan isi atribut publik dari luar kelas
