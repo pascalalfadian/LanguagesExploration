@@ -2,7 +2,10 @@
 class PublicClass {
     
     // 2. Cara mendefinisikan atribut privat bertipe int
-    int privateInt;
+    // Pada dart tidak ada keyword public,protected,private.
+    // Untuk mendapatkan hak akses private, sebelum nama variable ditambahkan '_'. 
+    // Variable tersebut tidak bisa diakses dari luar library.
+    int _privateInt;
     
     // 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
     String publicString = "Hello";
@@ -57,6 +60,8 @@ class PublicClass {
         // 10. Cara mengembalikan nilai
         return this._privateInt;
     }
+    //method getter v2
+    //public int getPrivateInt()=>this._privateInt;
 }
 
 // 11. Cara menurunkan kelas
