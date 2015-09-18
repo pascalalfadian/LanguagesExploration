@@ -2,13 +2,13 @@
 class PublicClass {
     
     // 2. Cara mendefinisikan atribut privat bertipe int
-    private int privateInt;
+    int privateInt;
     
     // 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
-    public String publicString = "Hello";
+    String publicString = "Hello";
     
     // 4. Cara mendefinisikan atribut statik
-    public static int staticInt;
+    static int staticInt;
     
     // 5. Cara mendefinisikan konstanta
     static const PI = 3.14;
