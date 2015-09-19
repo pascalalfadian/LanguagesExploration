@@ -54,7 +54,7 @@ class PublicSubClass extends PublicClass {
     }
 }
 
-public class Langua1gesExploration {
+public class LanguagesExploration {
     public static void main(String[] args) {
         // 14. Cara menginstansiasi kelas baru
         PublicClass publicClass = new PublicClass();
