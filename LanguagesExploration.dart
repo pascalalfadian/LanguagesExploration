@@ -1,41 +1,40 @@
   // 1. Cara mendifinisikan kelas
   class PublicClass {
+    
   // 2. Cara mendefinisikan atribut privat bertipe int
   int _privateInt;
-  // 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal ==> var s = 'Hello';
+  
+  // 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
   var publicString = "Hello";
- // 4. Cara mendefinisikan atribut statik ==> static void bar() {} // A static method
+  
+ // 4. Cara mendefinisikan atribut statik
   static var staticInt;
 
- // 5. Cara mendefinisikan konstanta ==>  const PI = 3.14;  
+ // 5. Cara mendefinisikan konstanta
   static const PI = 3.14;
 
  // 6. Cara mendefinisikan konstruktor
   PublicClass();
 
-   // 7b. Cara menuliskan dokumentasi untuk method 7a
+  // 7b. Cara menuliskan dokumentasi untuk method 7a
   ///
-  /// Method printNumber menerima [number] lalu mengeluarkan
-  /// String tanpa kembalian
+  ///
+  ///Mengubah nilai atribut privateInt menjadi [newPrivateInt]
   ///
   // 7a. Cara mendefinisikan method dengan parameter tanpa return value
-
-  ///
-  ///Mengubah nilai atribut privateInt menjadi [privateInt]
-  ///
   void setPrivateInt(num newPrivateInt) {
     // 8. Cara mengisi atribut dari dalam kelas itu sendiri
     _privateInt = newPrivateInt;
   }
-  // 9a. Cara mendefinisikan method dengan return value
-  // 9b. Cara menuliskan dokumentasi untuk method 9a
-  ///
-  /// Mendapatkan nilai dari atribut privateInt
-  /// @return nilai dari privateInt
-  ///
-  num getPrivateInt() {
-    // 10. Cara mengembalikan nilai
-    return this.privateInt;
+  
+    // 9a. Cara mendefinisikan method dengan return value
+    
+    // 9b. Cara menuliskan dokumentasi untuk method 9a
+     /// Mendapatkan nilai dari atribut privateInt
+     /// @return nilai dari privateInt
+    num getPrivateInt() {
+        // 10. Cara mengembalikan nilai
+        return this._privateInt;
     }
 }
 
@@ -43,11 +42,13 @@
 class PublicSubClass extends PublicClass {
 
   // 12. Cara melakukan override method
+  @override
   num getPrivateInt() {
 
     // 13. Cara mengakses method pada superclass
+    super.setPrivateInt(2);
     var temp = super.getPrivateInt();
-    //return 2*temp; null
+    return 2*temp;
   }
 }
 
@@ -86,4 +87,18 @@ class LanguagesExploration {
     // 23. Memastikan method overriding bekerja
     print("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt().toString());
   }
+}
+
+//method supaya bisa dijalanin
+void main(){
+  PublicClass pc = new PublicClass();
+  pc.printNumber(1);
+  pc.setPrivateInt(2);
+  print(pc.getPrivateInt());
+
+  PublicSubClass psc = new PublicSubClass();
+  print(psc.getPrivateInt().toString());
+
+  LanguagesExploration le = new LanguagesExploration();
+  le.main();
 }
