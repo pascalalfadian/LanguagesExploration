@@ -29,10 +29,12 @@ class PublicClass {
      * Mengubah nilai atribut privateInt
      * @param privateInt nilai privateInt yang baru.
      */
-    public void setPrivateInt(int privateInt) {
+    public void setPrivateInt {
     
         // 8. Cara mengisi atribut dari dalam kelas itu sendiri
-        set { this.privateInt = privateInt;}
+        set { 
+            privateInt = value;
+            }
     }
     
     // 9a. Cara mendefinisikan method dengan return value
@@ -41,10 +43,12 @@ class PublicClass {
      * Mendapatkan nilai dari atribut privateInt
      * @return nilai dari privateInt
      */
-    public int getPrivateInt() {
+    public int getPrivateInt {
         
         // 10. Cara mengembalikan nilai
-        get  {return this.privateInt; }
+        get  {
+            return privateInt;
+            }
     }
 }
 
