@@ -89,8 +89,10 @@ end
         puts @@staticInt
         
         
-        // 21. Cara mendapatkan nilai konstanta
-        System.out.println("[3.14] PublicClass.PI = " + PublicClass.PI);
+        # 21. Cara mendapatkan nilai konstanta
+        print "[3.14] PublicClass.PI = " 
+        PI= 3.14
+        puts PI
         
         # 22. Cara menginstansiasi kelas dengan turunannya
         publicSubClass = PublicSubClass.new
