@@ -29,13 +29,19 @@ class PublicClass {
      * Mengubah nilai atribut privateInt
      * @param privateInt nilai privateInt yang baru.
      */
-    public void setPrivateInt {
-    
-        // 8. Cara mengisi atribut dari dalam kelas itu sendiri
-        set { 
+
+    public int privateInt
+    {
+        get
+        {
+            return privateInt;
+        }
+        set
+        {
             privateInt = value;
-            }
+        }
     }
+
     
     // 9a. Cara mendefinisikan method dengan return value
     // 9b. Cara menuliskan dokumentasi untuk method 9a
@@ -43,13 +49,13 @@ class PublicClass {
      * Mendapatkan nilai dari atribut privateInt
      * @return nilai dari privateInt
      */
-    public int getPrivateInt {
+    //public int getPrivateInt {
         
         // 10. Cara mengembalikan nilai
-        get  {
-            return privateInt;
-            }
-    }
+        //get  {
+        //    return privateInt;
+        //    }
+    //}
 }
 
 // 11. Cara menurunkan kelas
