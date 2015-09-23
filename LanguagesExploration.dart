@@ -52,7 +52,7 @@ class PublicSubClass extends PublicClass {
   }
 }
 
-class LanguagesExploration {
+///Method main tidak perlu didalam kelas
   void main() {
     // 14. Cara menginstansiasi kelas baru
     var publicClass = new PublicClass();
@@ -87,4 +87,3 @@ class LanguagesExploration {
     // 23. Memastikan method overriding bekerja
     print("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt().toString());
   }
-}
