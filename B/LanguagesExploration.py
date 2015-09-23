@@ -1,12 +1,11 @@
 # 1. Cara mendefinisikan kelas
 class PublicClass:
   # 2. Cara mendefiniskan atribut bertipe int
-  __privateInt=0
+  __privateInt=0 #private
   # 6. Cara mendefinisikan konstruktor 
   def __init__(self):
     # 3. Cara mendefinisikan atribut bertipe string, dan mengisi dengan nilai awal
     self.publicString="Hello"
-    
     # 5.Cara mendefinisikan konstanta
     self.PI=3.14
 
@@ -52,5 +51,7 @@ class LanguagesExploration():
     # 22. Cara menginstansiasi kelas dengan turunannya
     publicSubClass = PublicSubClass();
     publicSubClass.setPrivateInt(13);
+    #23. Memastikan method overriding bekerja
+    print("[26] publicSubClass.getPrivateInt= %s"%publicSubClass.getPrivateInt())
 if  __name__="__main__":
   LanguagesExploration().main()
