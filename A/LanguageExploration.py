@@ -15,8 +15,7 @@ class PublicClass:
 	#atribut yang di deklarasi didalam kelas ini static
 	
     # 5. Cara mendefinisikan konstanta
-    PI = 3.14  
-	#Python tidak memiliki final. 
+    PI = frozenset(3.14)  
     
     # 6. Cara mendefinisikan konstruktor
     def __init__(self):
@@ -53,7 +52,7 @@ class PublicSubClass(PublicClass):
     def getPrivateInt(self):
         
         # 13. Cara mengakses method pada superclass
-        return 2 * 
+        return 2 * super.privateInt
 
 
 
