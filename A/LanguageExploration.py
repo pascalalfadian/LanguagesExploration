@@ -12,7 +12,7 @@ class PublicClass:
 	
     # 4. Cara mendefinisikan atribut statik
     staticInt = 0
-	#
+	#atribut yang di deklarasi didalam kelas ini static
 	
     # 5. Cara mendefinisikan konstanta
     PI = 3.14  
