@@ -1,9 +1,11 @@
 object PublicClass{
 
 	//1. Cara mendefinisikan atribut statik
-	var staticInt: Int = 0
+	//variable var memungkinkan nilai pada atribut staticInt dapat diubah
+	var staticInt: Int = _
 
 	//2. Cara mendefinisikan konstanta
+	// variable val membuat nilai pada atribut PI selalu tetap
 	val PI: Double = 3.14
 }
 
@@ -11,12 +13,12 @@ object PublicClass{
 class PublicClass{
 
 	//4. Cara mendefiniskan atribut ber hak akses private, bertipe integer, dan mengisi nilai awal
-	private var privateInt: Int = 0
+	private var privateInt: Int = _
 	
 	//5. Cara mendefiniskan atribut ber hak akses public, bertipe string, dan mengisi nilai awal 	
 	var publicString: String = "Hello"
 	
-	//6a. Cara mendifinisikan method dengan parameter tanpa return value
+	//6a. Cara mendefinisikan method dengan parameter tanpa return value
 	//6b. cara menuliskan dokumentasi untuk method 6a
 	/**
 	* Mengubah atribut privateInt dengan nilai yang baru, bertipe integer
@@ -45,7 +47,7 @@ class PublicSubClass extends PublicClass{
 	//11. Cara meng-override method dari kelas Superclass
 	override def getPrivateInt(): Int = {
 		//12. Cara mengakses method dari kelas Superclass
-		return (2 * super.getPrivateInt())
+	     return  (2 * super.getPrivateInt())
 	}
 }
 
@@ -67,7 +69,7 @@ object LanguagesExploration {
 		publicClass.setPrivateInt(13)
 		
 		//16. Cara memanggil method dan mendapatkan return value-nya
-		println("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt())
+		println("[13] publicClass.getPrivateInt() = " + publicClass.getPrivateInt)
 		
 		//17. Cara mengubah nilai dari atribut publicString dari kelas publicClass (luar kelas)
 		publicClass.publicString = "World!"
@@ -75,8 +77,8 @@ object LanguagesExploration {
 		//18. Cara memanggil atribut dan mendapatkan nilai atribut dari kelas publicClass (luar kelas)
 		println("[World!] publicClass.publicString = " + publicClass.publicString)
 		
-		//19. Cara mengisi nilai atribut statik
-		staticInt = 10
+		//19. Cara memanggil dan mengisi nilai atribut statik
+		PublicClass.staticInt = 10
 		
 		//20. Cara memanggil atribut statik dan mendapatkan nilainya 
 		println("[10] PublicClass.staticInt = " + PublicClass.staticInt)
@@ -89,6 +91,6 @@ object LanguagesExploration {
 		publicSubClass.setPrivateInt(13)
 		
 		//23. Memastikan method overriding bekerja
-		println("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt())
+		println("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt)
 	}
 }
