@@ -12,6 +12,8 @@ class PublicClass
     
     # 5. Cara mendefinisikan konstanta
     PI = 3.14
+    #Konstanta hanya bisa digunakan didalam kelas yang memilikinya
+    #Konstanta akan menjadi global jika diinisialisasi diluar kelas
     
     # 6. Cara mendefinisikan konstruktor
     def initialize
@@ -92,6 +94,8 @@ end
         print "[3.14] PublicClass.PI = " 
         PI= 3.14
         puts PI
+        #Nilai konstanta tidak bisa diperoleh dari luar kelas yang menginisialisasikan
+        #Kecuali nilai konstanta diinisialisasi diluar kelas sehingga global atau menggunakan method
         
         # 22. Cara menginstansiasi kelas dengan turunannya
         publicSubClass = PublicSubClass.new
