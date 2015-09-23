@@ -26,32 +26,32 @@ class PublicClass(object):
 # 11. Cara menurunkan kelas
 class PublicSubClass(PublicClass):
   # 12. Cara melakukan override method
-  def getprivateInt(self):
+  def getPrivateInt(self):
   # 13. Cara mengakses method pada superclass
   return 2 * super(PublicSubClass, self).getPrivateInt()
 
 class LanguagesExploration():
-  def main(self):
-    # 14. Cara menginstansiasi kelas baru
-    publicClass=PublicClass()
-    # 15. Cara memanggil method dengan parameter
-    publicClass.setPrivateInt(13)
-    # 16. Cara memanggil method dan mendapatkan return value-nya
-    print("[13] publicClass.getPrivateInt() = %s" % publicClass.getPrivateInt())
-    # 17. Cara mengubah isi atribut publik dari luar kelas
-    publicClass.publicString = "World!"
-    # 18. Cara mendapatkan isi atribut publik dari luar kelas
-    print("[World!] publicClass.publicString %s= " % publicClass.publicString)
-    # 19. Cara mengisi nilai atribut statik 
-    publicClass.staticInt=10
-    # 20. Cara mendapatkan nilai atribut statik 
-    print("[10] publicClass.staticInt = %s"%publicClass.staticInt)
-    # 21. Cara mendapatkan nilai konstanta 
-    print("[3.14] publicClass.PI = %s"%publicClass.PI)
-    # 22. Cara menginstansiasi kelas dengan turunannya
-    publicSubClass = PublicSubClass();
-    publicSubClass.setPrivateInt(13);
-    #23. Memastikan method overriding bekerja
-    print("[26] publicSubClass.getPrivateInt= %s"%publicSubClass.getPrivateInt())
-if  __name__="__main__":
-  LanguagesExploration().main()
+  #def main(self):
+  # 14. Cara menginstansiasi kelas baru
+  publicClass=PublicClass()
+  # 15. Cara memanggil method dengan parameter
+  publicClass.setPrivateInt(13)
+  # 16. Cara memanggil method dan mendapatkan return value-nya
+  print("[13] publicClass.getPrivateInt() = %s" % publicClass.getPrivateInt())
+  # 17. Cara mengubah isi atribut publik dari luar kelas
+  publicClass.publicString = "World!"
+  # 18. Cara mendapatkan isi atribut publik dari luar kelas
+  print("[World!] publicClass.publicString = %s" % publicClass.publicString)
+  # 19. Cara mengisi nilai atribut statik 
+  publicClass.staticInt=10
+  # 20. Cara mendapatkan nilai atribut statik 
+  print("[10] publicClass.staticInt = %s"%publicClass.staticInt)
+  # 21. Cara mendapatkan nilai konstanta 
+  print("[3.14] publicClass.PI = %s"%publicClass.PI)
+  # 22. Cara menginstansiasi kelas dengan turunannya
+  publicSubClass = PublicSubClass();
+  publicSubClass.setPrivateInt(13);
+  #23. Memastikan method overriding bekerja
+  print("[26] publicSubClass.getPrivateInt= %s"%publicSubClass.getPrivateInt())
+#if  __name__="__main__":
+  #LanguagesExploration().main()
