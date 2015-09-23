@@ -63,7 +63,7 @@ object LanguagesExploration {
 	def main(args: Array[String]): Unit = {
 
 		//14. Cara menginstansiasi kelas baru
-		val publicClass = new PublicClass()
+		var publicClass = new PublicClass()
 		
 		//15. Cara memanggil method dengan parameter  
 		publicClass.setPrivateInt(13)
@@ -87,7 +87,7 @@ object LanguagesExploration {
 		println("[3.14] PublicClass.PI = " + PublicClass.PI)
 		
 		//22. Cara menginstansiasi kelas subclass
-		val publicSubClass = new PublicSubClass()
+		var publicSubClass = new PublicSubClass()
 		publicSubClass.setPrivateInt(13)
 		
 		//23. Memastikan method overriding bekerja
