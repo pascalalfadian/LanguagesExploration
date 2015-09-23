@@ -8,7 +8,7 @@ class PublicClass:
 
     # 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
     publicString = "Hello"
-	# didalam python kita tidak perlu mendeklarasi tipe dari suatu atribut, karena dari python tipr atribut tersebut akan otomatis dilihat dari valuenya
+	# didalam python kita tidak perlu mendeklarasi tipe dari suatu atribut, karena dari python tipe atribut tersebut akan otomatis dilihat dari valuenya
 	
     # 4. Cara mendefinisikan atribut statik
     staticInt = 0
