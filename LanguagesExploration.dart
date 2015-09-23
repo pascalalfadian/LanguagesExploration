@@ -88,17 +88,3 @@ class LanguagesExploration {
     print("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt().toString());
   }
 }
-
-//method supaya bisa dijalanin
-void main(){
-  PublicClass pc = new PublicClass();
-  pc.printNumber(1);
-  pc.setPrivateInt(2);
-  print(pc.getPrivateInt());
-
-  PublicSubClass psc = new PublicSubClass();
-  print(psc.getPrivateInt().toString());
-
-  LanguagesExploration le = new LanguagesExploration();
-  le.main();
-}
