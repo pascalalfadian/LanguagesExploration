@@ -46,7 +46,6 @@ class PublicSubClass extends PublicClass {
   num getPrivateInt() {
 
     // 13. Cara mengakses method pada superclass
-    super.setPrivateInt(2);
     var temp = super.getPrivateInt();
     return 2*temp;
   }
