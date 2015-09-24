@@ -9,56 +9,54 @@ object PublicClass{
 	val PI: Double = 3.14
 }
 
-//3.Cara mendefiniskan kelas
+//3. Cara mendefiniskan kelas
 class PublicClass{
 
-	//4. Cara mendefiniskan atribut ber hak akses private, bertipe integer, dan mengisi nilai awal
+	//4. Cara mendefinisikan konstruktor
+	def PublicClass() = {
+		//kosong
+	}
+	
+	//5. Cara mendefiniskan atribut ber hak akses private, bertipe integer, dan mengisi nilai awal
 	private var privateInt: Int = _
 	
-	//5. Cara mendefiniskan atribut ber hak akses public, bertipe string, dan mengisi nilai awal 	
+	//6. Cara mendefiniskan atribut ber hak akses public, bertipe string, dan mengisi nilai awal 	
 	var publicString: String = "Hello"
 	
-	//6a. Cara mendefinisikan method dengan parameter tanpa return value
-	//6b. cara menuliskan dokumentasi untuk method 6a
+	//7a. Cara mendefinisikan method dengan parameter tanpa return value
+	//7b. cara menuliskan dokumentasi untuk method 7a
 	/**
 	* Mengubah atribut privateInt dengan nilai yang baru, bertipe integer
 	* @param newPrivateInt merupakan nilai dari atribut privateInt yang baru
 	*/
 	def setPrivateInt(newPrivateInt: Int): Unit = {
-		//7. Cara mengubah nilai dari atribut menjadi nilai dari parameter
-		privateInt = newPrivateInt 
+		//8. Cara mengubah nilai dari atribut menjadi nilai dari parameter
+		this.privateInt = newPrivateInt 
 	}
 	
-	//8a. Cara mendifinisikan method tanpa return value
-	//8b. cara menuliskan dokumentasi untuk method 8a 
+	//9a. Cara mendifinisikan method tanpa return value
+	//9b. cara menuliskan dokumentasi untuk method 9a 
 	/**
 	 * Mengembalikan nilai dari atribut privateInt
 	 * @return nilai dari atribut privateInt
 	 */
 	def getPrivateInt(): Int = {
-	   	//9. Cara mengembalikan nilai
-		return privateInt
+		//10. Cara mengembalikan nilai
+		return this.privateInt
 	}
 }
 
-//10. Cara menurunkan kelas
+//11. Cara menurunkan kelas
 class PublicSubClass extends PublicClass{
-
-	//11. Cara meng-override method dari kelas Superclass
+	
+	//12. Cara meng-override method dari kelas Superclass
 	override def getPrivateInt(): Int = {
-		//12. Cara mengakses method dari kelas Superclass
-	     return  (2 * super.getPrivateInt())
+		//13. Cara mengakses method dari kelas Superclass
+		return  (2 * super.getPrivateInt())
 	}
-}
-
-//13. Cara mendefinisikan konstruktor
-class PublicClass2(){
-	// kosong
 }
 
 object LanguagesExploration {
-	
-	import PublicClass._
 
 	def main(args: Array[String]): Unit = {
 
