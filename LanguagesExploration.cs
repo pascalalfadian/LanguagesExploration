@@ -13,68 +13,54 @@ class PublicClass {
     public String publicString = "Hello";
     
     // 4. Cara mendefinisikan atribut statik
-    public static int staticInt;
+    static public int staticInt;
     
     // 5. Cara mendefinisikan konstanta
-   public const double PI = 3.14;
+    public const double PI = 3.14;
     
     // 6. Cara mendefinisikan konstruktor
-    public PublicClass(string[] args) {
+    public PublicClass() {
         // kosong
     }
     
     // 7a. Cara mendefinisikan method dengan parameter tanpa return value
-    public void methodName(){
-        
-    }
-        
     // 7b. Cara menuliskan dokumentasi untuk method 7a
     /**
      * Mengubah nilai atribut privateInt
-     * @param privateInt nilai privateInt yang baru.
+     * @param privateInts nilai privateInt yang baru.
      */
-
-    public int privateInt
-    {
-        get
-        {
-            return privateInt;
-        }
-        set
-        {
-            privateInt = value;
-        }
+    public void setPrivateInt(int privateInts) {
+    
+        // 8. Cara mengisi atribut dari dalam kelas itu sendiri
+        privateInt = privateInts;
     }
-
     
     // 9a. Cara mendefinisikan method dengan return value
     // 9b. Cara menuliskan dokumentasi untuk method 9a
-    /**
+    /*
      * Mendapatkan nilai dari atribut privateInt
      * @return nilai dari privateInt
      */
-    //public int getPrivateInt {
+    public int getPrivateInt(){
         
-        // 10. Cara mengembalikan nilai
-        //get  {
-        //    return privateInt;
-        //    }
-    //}
+    // 10. Cara mengembalikan nilai
+        return privateInt;
+    }
 }
 
 // 11. Cara menurunkan kelas
- class PublicSubClass : PublicClass
+class PublicSubClass : PublicClass
+ {
+
+    PublicSubClass(string[] args) :  base(args)
     {
 
-        PublicSubClass(string[] args) :  base(args)
-        {
-
-        }
+    }
     // 12. Cara melakukan override method
-    public int getPrivateInt() {
+    public double getPrivateInt() {
     
     // 13. Cara mengakses method pada superclass
-    return 2 * super.getPrivateInt();
+        return 2 * getPrivateInt();
     }
 }
 
@@ -112,5 +98,4 @@ public class LanguagesExploration {
         // 23. Memastikan method overriding bekerja
          System.Console.WriteLine("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt());
     }
-}
 }
