@@ -1,27 +1,27 @@
 object PublicClass{
 
-	//1. Cara mendefinisikan atribut statik
+	//4. Cara mendefinisikan atribut statik
 	//variable var memungkinkan nilai pada atribut staticInt dapat diubah
 	var staticInt: Int = _
 
-	//2. Cara mendefinisikan konstanta
+	//5. Cara mendefinisikan konstanta
 	// variable val membuat nilai pada atribut PI selalu tetap
 	val PI: Double = 3.14
 }
 
-//3. Cara mendefiniskan kelas
+//1. Cara mendefiniskan kelas
 class PublicClass{
+	
+	//2. Cara mendefiniskan atribut ber hak akses private, bertipe integer, dan mengisi nilai awal
+	private var privateInt: Int = _
 
-	//4. Cara mendefinisikan konstruktor
+	//3. Cara mendefiniskan atribut ber hak akses public, bertipe string, dan mengisi nilai awal 	
+	var publicString: String = "Hello"
+
+	//6. Cara mendefinisikan konstruktor
 	def PublicClass() = {
 		//kosong
 	}
-	
-	//5. Cara mendefiniskan atribut ber hak akses private, bertipe integer, dan mengisi nilai awal
-	private var privateInt: Int = _
-	
-	//6. Cara mendefiniskan atribut ber hak akses public, bertipe string, dan mengisi nilai awal 	
-	var publicString: String = "Hello"
 	
 	//7a. Cara mendefinisikan method dengan parameter tanpa return value
 	//7b. cara menuliskan dokumentasi untuk method 7a
