@@ -75,16 +75,16 @@ object LanguagesExploration {
 		//18. Cara memanggil atribut dan mendapatkan nilai atribut dari kelas publicClass (luar kelas)
 		println("[World!] publicClass.publicString = " + publicClass.publicString)
 		
-		//19. Cara memanggil dan mengisi nilai atribut statik
+		//19. Cara mengisi nilai atribut statik
 		PublicClass.staticInt = 10
 		
 		//20. Cara memanggil atribut statik dan mendapatkan nilainya 
 		println("[10] PublicClass.staticInt = " + PublicClass.staticInt)
 		
-		//21. Cara memanggil konstanta 
+		//21. Cara mendapatkan nilai konstanta 
 		println("[3.14] PublicClass.PI = " + PublicClass.PI)
 		
-		//22. Cara menginstansiasi kelas subclass
+		//22. Cara menginstansiasi kelas dengan turunannya
 		var publicSubClass = new PublicSubClass()
 		publicSubClass.setPrivateInt(13)
 		
