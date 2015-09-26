@@ -1,9 +1,8 @@
+
 /**
  * Converting to C#...
  */
 using System;
-namespace PublicClassApplication
-{
     // 1. Cara mendifinisikan kelas
     class PublicClass
     {
@@ -45,7 +44,7 @@ namespace PublicClassApplication
      * Mendapatkan nilai dari atribut privateInt
      * @return nilai dari privateInt
      */
-        public int getPrivateInt()
+        public virtual int getPrivateInt()
         {
 
             // 10. Cara mengembalikan nilai
@@ -58,17 +57,18 @@ namespace PublicClassApplication
     {
 
         // 12. Cara melakukan override method
-        public new int getPrivateInt()
+        public override int getPrivateInt()
         {
-
+            
             // 13. Cara mengakses method pada superclass
+            
             return 2 * base.getPrivateInt();
         }
     }
 
     public class LanguagesExploration
     {
-        static void main(String[] args)
+        static void Main(String[] args)
         {
             // 14. Cara menginstansiasi kelas baru
             PublicClass publicClass = new PublicClass();
@@ -103,4 +103,3 @@ namespace PublicClassApplication
             System.Console.WriteLine("[26] publicSubClass.getPrivateInt() = " + publicSubClass.getPrivateInt());
         }
     }
-}
