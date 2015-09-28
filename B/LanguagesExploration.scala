@@ -1,3 +1,14 @@
+object PublicClass{
+
+	//4. Cara mendefinisikan atribut statik
+	//variable var memungkinkan nilai pada atribut staticInt dapat diubah
+	var staticInt: Int = _
+
+	//5. Cara mendefinisikan konstanta
+	// variable val membuat nilai pada atribut PI selalu tetap
+	val PI: Double = 3.14
+}
+
 //1. Cara mendefiniskan kelas
 class PublicClass{
 	
@@ -6,14 +17,6 @@ class PublicClass{
 
 	//3. Cara mendefiniskan atribut ber hak akses public, bertipe string, dan mengisi nilai awal 	
 	var publicString: String = "Hello"
-	
-	//4. Cara mendefinisikan atribut statik
-	//variable var memungkinkan nilai pada atribut staticInt dapat diubah
-	var staticInt: Int = _
-
-	//5. Cara mendefinisikan konstanta
-	// variable val membuat nilai pada atribut PI selalu tetap
-	val PI: Double = 3.14
 
 	//6. Cara mendefinisikan konstruktor
 	def PublicClass() = {
@@ -27,12 +30,11 @@ class PublicClass{
 	* @param newPrivateInt merupakan nilai dari atribut privateInt yang baru
 	*/
 	def setPrivateInt(newPrivateInt: Int): Unit = {
-		
 		//8. Cara mengubah nilai dari atribut menjadi nilai dari parameter
 		this.privateInt = newPrivateInt 
 	}
 	
-	//9a. Cara mendifinisikan method dengan return value
+	//9a. Cara mendifinisikan method tanpa return value
 	//9b. cara menuliskan dokumentasi untuk method 9a 
 	/**
 	 * Mengembalikan nilai dari atribut privateInt
@@ -45,7 +47,7 @@ class PublicClass{
 }
 
 //11. Cara menurunkan kelas
-class PublicSubClass() extends PublicClass(){
+class PublicSubClass extends PublicClass{
 	
 	//12. Cara meng-override method dari kelas Superclass
 	override def getPrivateInt(): Int = {
