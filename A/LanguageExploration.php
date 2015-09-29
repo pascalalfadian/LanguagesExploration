@@ -76,12 +76,12 @@
                 echo "[World!] publicClass.publicString = " . $publicClass->publicString . "\n";
         
                 /*
-          *memperbaiki nomor 19 untuk mengganti atribut statik kami menggunakan method setter
-          
-        */
+					*memperbaiki nomor 19 untuk mengganti atribut statik kami menggunakan method setter
+					*memperbaiki "<br>" menjadi "\n"
+				*/
         
         
-        # 19. Cara mengisi nilai atribut statik
+				# 19. Cara mengisi nilai atribut statik
                 $publicClass->set_private_int(10);
         
                 # 20. Cara mendapatkan nilai atribut statik
