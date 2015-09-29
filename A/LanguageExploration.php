@@ -1,14 +1,12 @@
-
-
-        <?php
+<?php
         /*
           Dokumentasi LanguagesExploration ADBO dalam PHP
           Kelompok 1 :
-          Riki Rusli		2014730032
-          Daniel Ferdinan   	2014730038
-          Fernando		2011730080
-          Ivan TW           	2014730026
-          Aldy Marcelino	2013730005
+          Riki Rusli    2014730032
+          Daniel Ferdinan     2014730038
+          Fernando    2011730080
+          Ivan TW             2014730026
+          Aldy Marcelino  2013730005
         */
         
         /*
@@ -18,20 +16,20 @@
         # deklarasi kelas
         # 1. cara mendefinisikan kelas
         class PublicClass {
-		
+    
             # 2. Cara mendefinisikan atribut private bertipe int
             private $private_int = 0;
             
-			
+      
             # 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
             public $public_string = "Hello";
-			
+      
             # 4. Cara mendefinisikan atribut statik
             public static $static_int;
-			
+      
             # 5. Cara mendefinisikan konstanta
             const PI = 3.14;
-			
+      
             # 6. Cara mendefinisikan konstruktor
             public function __construct() {
                 #kosong
@@ -64,43 +62,42 @@
             public static function main() {
                 # 14. Cara menginstansiasi kelas baru
                 $publicClass = new PublicClass();
-				
+        
                 # 15. Cara memanggil method dengan parameter
                 $publicClass->set_private_int(13);
-				
+        
                 # 16. Cara memanggil method dan mendapatkan return value-nya
-                echo "[13] publicClass.getPrivateInt() = " . $publicClass->get_private_int() . "<br>" ;
-				
+                echo "[13] publicClass.getPrivateInt() = " . $publicClass->get_private_int() . "\n" ;
+        
                 # 17. Cara mengubah isi atribut publik dari luar kelas
                 $publicClass->publicString = "World!";
-				
+        
                 # 18. Cara mendapatkan isi atribut publik dari luar kelas
-                echo "[World!] publicClass.publicString = " . $publicClass->publicString . "<br>";
-				
+                echo "[World!] publicClass.publicString = " . $publicClass->publicString . "\n";
+        
                 /*
-					*memperbaiki nomor 19 untuk mengganti atribut statik kami menggunakan method setter
-					
-				*/
-				
-				
-				# 19. Cara mengisi nilai atribut statik
+          *memperbaiki nomor 19 untuk mengganti atribut statik kami menggunakan method setter
+          
+        */
+        
+        
+        # 19. Cara mengisi nilai atribut statik
                 $publicClass->set_private_int(10);
-				
+        
                 # 20. Cara mendapatkan nilai atribut statik
-                echo "[10] PublicClass.staticInt = " . $publicClass->get_private_int(). "<br>";
-				
-				
+                echo "[10] PublicClass.staticInt = " . $publicClass->get_private_int(). "\n";
+        
+        
                 # 21. Cara mendapatkan nilai konstanta
-                echo "[3.14] PublicClass.PI = " . $publicClass::PI . "<br>";
-				
+                echo "[3.14] PublicClass.PI = " . $publicClass::PI . "\n";
+        
                 # 22. Cara menginstansiasi kelas dengan turunannya
                 $publicSubClass = new PublicSubClass();
                 $publicSubClass->set_private_int(13);
-				
+        
                 # 23. Memastikan method overriding bekerja
-                echo "[26] publicSubClass.getPrivateInt() = " . $publicSubClass->get_private_int() . "<br>";
+                echo "[26] publicSubClass.getPrivateInt() = " . $publicSubClass->get_private_int() . "\n";
             }
         }
         LanguagesExploration::main();
         ?>
-
