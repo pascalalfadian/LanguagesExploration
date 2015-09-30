@@ -11,6 +11,10 @@ class PublicClass
         return @publicString= publicString
     end    
     
+    def getPublicString
+        return @publicString
+    end 
+    
     # 4. Cara mendefinisikan atribut statik
     @@staticInt
     
@@ -81,7 +85,7 @@ end
         
         # 18. Cara mendapatkan isi atribut publik dari luar kelas
         print "[World!] publicClass.publicString = "
-        puts $publicString
+        puts publicClass.getPublicString
         
         
         # 19. Cara mengisi nilai atribut statik
@@ -107,4 +111,3 @@ end
         print "[26] publicSubClass.getPrivateInt() = "
         puts publicSubClass.getPrivateInt
         
-
