@@ -28,7 +28,7 @@ class PublicSubClass(PublicClass):
   # 12. Cara melakukan override method
   def getPrivateInt(self):
   # 13. Cara mengakses method pada superclass
-  return 2 * super(PublicSubClass, self).getPrivateInt()
+    return 2 * super(PublicSubClass, self).getPrivateInt()
 
 class LanguagesExploration():
   #def main(self):
@@ -53,5 +53,3 @@ class LanguagesExploration():
   publicSubClass.setPrivateInt(13);
   #23. Memastikan method overriding bekerja
   print("[26] publicSubClass.getPrivateInt= %s"%publicSubClass.getPrivateInt())
-#if  __name__="__main__":
-  #LanguagesExploration().main()
