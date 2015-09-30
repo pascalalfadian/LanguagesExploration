@@ -7,8 +7,8 @@ class PublicClass
     # 3. Cara mendifinisikan atribut public bertipe string, dan mengisi dengan nilai awal
     @publicString = "Hello"
     
-    def getPublicString
-        return @publicString
+    def setPublicString(publicString)
+        return @publicString= publicString
     end    
     
     # 4. Cara mendefinisikan atribut statik
@@ -77,7 +77,7 @@ end
         puts publicClass.getPrivateInt
         
         # 17. Cara mengubah isi atribut publik dari luar kelas
-        $publicString = "World!"
+        publicClass.setPublicString("World!")
         
         # 18. Cara mendapatkan isi atribut publik dari luar kelas
         print "[World!] publicClass.publicString = "
