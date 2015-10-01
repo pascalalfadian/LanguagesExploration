@@ -18,6 +18,14 @@ class PublicClass
     # 4. Cara mendefinisikan atribut statik
     @@staticInt
     
+    def setStaticInt(newStaticInt)
+        @@staticInt = newStaticInt
+    end
+    
+    def getStaticInt
+        return @@staticInt
+    end
+    
     # 5. Cara mendefinisikan konstanta
     PI = 3.14
     
@@ -89,11 +97,11 @@ end
         
         
         # 19. Cara mengisi nilai atribut statik
-        @@staticInt = 10
+        publicClass.setStaticInt(10)
         
         # 20. Cara mendapatkan nilai atribut statik
         print "[10] PublicClass.staticInt = "
-        puts @@staticInt
+        puts publicClass.getStaticInt
         
         
         # 21. Cara mendapatkan nilai konstanta
