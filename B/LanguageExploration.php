@@ -1,4 +1,11 @@
 <?php
+	/*nama Kelompok : Gabriel Radewa
+			  Ricky Suryadi
+			  Renaldi Nugroho
+			  Alfian Prabowo
+			  Erlangga Laimena
+			  Risfan
+			  */
         // put your code here
         class PublicClass {
             // 2. cara mendifinisikan atribut private bertipe int
